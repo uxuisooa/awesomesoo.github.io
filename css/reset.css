@@ -107,7 +107,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -166,4 +166,8 @@ select {
 
 em {
   font-style: normal;
+}
+
+button {
+  border: none;
 }
