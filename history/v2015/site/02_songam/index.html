@@ -1,413 +1,401 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="UTF-8">
-  <meta name="Generator" content="EditPlus®">
-  <meta name="Author" content="">
-  <meta name="Keywords" content="">
-  <meta name="Description" content="">
-
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
-
-  <title>송암스페이스센터</title>
-<!-- jquery기본 -->
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-
-<!-- nav -->
-<script type="text/javascript" src="js/template.js"></script>
-
-<!-- btn_all_menu -->
-<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
-<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
-<script type="text/javascript" src="js/mof.js"></script>
-
-<!-- 메인배너 -->
-<!-- <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script> -->
-<script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
-<script type="text/javascript">
-	$(function(){
-		var visual=$('#brandVisual > ul > li');
-		var button=$('#buttonList > li');
-		var current=0;
-		
-		button.on({
-			    click:function(){
-					var tg=$(this);
-					var i=tg.index();
-					button.removeClass('on')
-					tg.addClass('on');
-					move(i);
-				}
-		})
-		/*추가*/
-		timer();
-		function timer(){
-			setInterval(function(){
-				var n=current+1;
-				if(n==visual.length){
-					n=0;
-				}
-				button.eq(n).trigger('click');
-			},3000);
-		}
-         /**/
-		function move(i){
-			if(current==i) return;//추가
-			var currentEl=visual.eq(current);
-			var nextEl=visual.eq(i);
-				currentEl.css({left:0}).stop().animate({left:'-100%'});
-				nextEl.css({left:'100%'}).stop().animate({left:0});
-				current=i;
-		}
-	})
-	
-</script>
-
-
-<!--[if IE]><script type="text/javascript" src="js/ie.js"></script><![endif]-->
-
-<link rel="stylesheet" href="css/reset.css">
-
- </head>
- <body>
-  
-<div id="all_wrap">
-	<div id="wrap">
-
-
-
-
-
-	<div id="skipnav">
-		<a href="#">주메뉴 바로가기</a>	
-		<a href="#">본문 바로가기</a>
-	</div><!--//skipnav-->
-
-
-
-
-<div id="all_menu_wrap">
-	<p><img src="images/main_img/img_all_menu.png"  alt="송암스페이스센터 전체메뉴입니다." width="189" height="87"/></p>
-	<nav>
-		<div id="gnb" class="mt10">
-			<h2 class="hide">주메뉴</h2>
-			<ul>
-				<li>
-					<a href="#" onclick="toggleDepth1MenuGroup('1')">송암별빛</a>
-					<div id="depth2MenuList_1">
-						<ul>
-							<li><a href="sub01.html">설립이념</a></li>
-							<li><a href="#">시설안내</a></li>
-							<li><a href="#">오시는길</a></li>
-						</ul>
-					</div>
-				</li>
-				<li>
-					<a href="#" onclick="toggleDepth1MenuGroup('2')">별소리모아</a>
-					<div id="depth2MenuList_2">
-						<ul>
-							<li><a href="#">방송보도자료</a></li>
-							<li><a href="#">신문잡지보도</a></li>
-						</ul>
-					</div>
-				</li>
-				<li>
-					<a href="#" onclick="toggleDepth1MenuGroup('3')">별나래갤러리</a>
-					<div id="depth2MenuList_3">
-						<ul>
-							<li><a href="#">별빛갤러리</a></li>
-							<li><a href="#">포토갤러리</a></li>
-						</ul>
-					</div>
-				</li>
-				<li>
-					<a href="#" onclick="toggleDepth1MenuGroup('4')">별소담</a>
-					<div id="depth2MenuList_4">
-						<ul>
-							<li><a href="#">별빛뉴스</a></li>
-							<li><a href="#">별빛이야기</a></li>
-							<li><a href="#">별빛 요금안내</a></li>
-						</ul>
-					</div>
-				</li>
-				<li>
-					<a href="#" onclick="toggleDepth1MenuGroup('5')">별빛캠프</a>
-					<div id="depth2MenuList_5">
-						<ul>
-							<li><a href="#">일일 천문교실</a></li>
-							<li><a href="#">1박2일 우주 과학캠프</a></li>
-							<li><a href="#">2박3일 우주여행</a></li>
-							<li><a href="#">챌린저러닝센터 실습</a></li>
-						</ul>
-					</div>
-				</li>
-			</ul>
-		</div><!-- //gnb -->
-	</nav>
-
-
-	<p class="ta_c mt20">
-		<a href="#" id="btnAllMenuClose" title="메뉴닫기">
-			<img src="images/main_img/btn_all_close.png"  alt="메뉴닫기" width="85" height="30"/>
-		</a>
-	</p>
-
-</div><!-- //all_menu_wrap -->
-
-
-
-
-
-
-<header id="header">
-
-	<h1><a href="index.html" id="logo"><img src="images/main_img/logo.jpg" alt="송암스페이스센터" width="100" height="100" /></a></h1>
-
-	<p class="btn_all_menu">
-		<a href="#" id="btnAllMenuOpen" title="메뉴열기">
-			<img src="images/main_img/allmenu.png"  alt="메뉴열기"/>
-		</a>
-	</p><!-- //btn_all_menu -->
-
-
-
-
-	<div id="topmenu">
-	<ul>					
-		<li><a href="index.html">HOME</a></li>
-		<li><a href="#">로그인</a></li>
-		<li><a href="#">회원가입</a></li>
-		<li><a href="#">사이트맵</a></li>
-		<li><a href="#">ENGLISH</a></li>
-	</ul>
-</div><!--//topmenu -->
-
-
-<div id="nav">
-
-		<h2 class="hide">주메뉴</h2>
-
-		<ul id="menu">
-			<li>
-				<a href="sub01.html" class="1depth"><img src="images/main_img/nav01.gif"  alt="송암별빛"/></a>
-				<ul class="sunmenu sun01">
-					<li><a href="sub01.html">설립이념</a></li>
-					<li><a href="#">시설안내</a></li>
-					<li><a href="#">오시는길</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="#" class="1depth"><img src="images/main_img/nav02.gif"  alt="별소리모아"/></a>
-				<ul class="sunmenu sun02">
-					<li><a href="#">방송보도자료</a></li>
-					<li><a href="#">신문잡지보도</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="#" class="1depth"><img src="images/main_img/nav03.gif"  alt="별나래갤러리"/></a>
-				<ul class="sunmenu sun03">
-					<li><a href="#">별빛갤러리</a></li>
-					<li><a href="#">포토갤러리</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="#" class="1depth"><img src="images/main_img/nav04.gif"  alt="별소담"/></a>
-				<ul class="sunmenu sun04">
-					<li><a href="#">별빛뉴스</a></li>
-					<li><a href="#">별빛이야기</a></li>
-					<li><a href="#">별빛 요금안내</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="#" class="1depth"><img src="images/main_img/nav05.gif"  alt="별빛캠프"/></a>
-				<ul class="sunmenu sun05">
-					<li><a href="#">일일 천문교실</a></li>
-					<li><a href="#">1박2일 우주 과학캠프</a></li>
-					<li><a href="#">2박3일 우주여행</a></li>
-					<li><a href="#">챌린저러닝센터 실습</a></li>
-				</ul>
-			</li>
-			
-		</ul><!-- //menu-->
-
-</div><!-- //nav -->
-
-
-
-
-<script language="javascript" type="text/javascript">
-initNavigation()
-</script>
-
-
-</header><!-- //header -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div id="container">
-
-	<div id="Visual">
-	<div id="brandVisual">
-		<ul>
-			<li class="visual_0"><a href="#">배너이미지1</a></li>
-			<li class="visual_1"><a href="#">배너이미지2</a></li>
-			<li class="visual_2"><a href="#">배너이미지3</a></li>
-		</ul>
-	</div><!-- //brandVisual -->
-	<ul id="buttonList">
-		<li class="on"><a href="#">배너1</a></li>
-		<li ><a href="#">배너2</a></li>
-		<li ><a href="#">배너3</a></li>
-	</ul><!-- //buttonList -->
-	</div><!-- //Visual -->
-
-
-	<div class="box">
-	
-		<div class="box01">
-			<h3><a href="#">공지사항   ></a></h3>
-			<ul>
-				<li><a href="#">11/18(수) 일반관람 제한 안내</a></li>
-				<li><a href="#">2015년 10월 관측대상</a></li>
-				<li><a href="#">2015년 9월의 관측대상</a></li>
-				<li><a href="#">Windows10 사용자는 꼭 확인...</a></li>
-				<li><a href="#">70주년 광복절! 나라사랑 태극기...</a></li>
-			</ul>
-			<p class="more"><a href="#"><img src="images/main_img/more.png"  alt="공지사항 더보기"/></a></p>
-		</div><!-- //box01 -->
-
-
-		<div class="box02">
-			<h3><a href="#">개장시간   ></a></h3>
-			<p>
-				매주 월요일 휴무 하절기(4월~12월)<br/>
-				화~금,일,공휴일 11:00~21:00<br/>
-				토요일11:00~21:30
-			</p>
-			<p class="boxline"></p>
-			<h3><a href="#">티켓매표시간   ></a></h3>
-			<p>
-				화~금,일,공휴일 11:00~19:00<br/>
-				토요일11:00~19:30
-			</p>
-		</div><!-- //box02 -->
-
-
-		<div class="box03">
-			<h3><a href="#">스타스키친 레스토랑   ></a></h3>
-			<p>
-				화~금,일,공휴일 11:00~20:00<br/>
-				(Last Order 19:20분 까지)
-			</p>
-		</div><!-- //box03 -->
-
-
-		<div class="box04">
-			<h3><a href="#">단체예약 및 상담문의   ></a></h3>
-			<p>031-894-6000 <br/>
-			상담시간 9:30 ~ 18:00(월~토)</p>
-		</div><!-- //box04 -->
-	
-	</div><!-- //box -->
-
-
-
-
-	<div class="quick_menu">
-		<h3 class="quickM">QUICK MENU</h3>
-			<ul>
-				<li><a href="#">
-					<img src="images/main_img/icon01.png" alt="위치정보"><br />
-					위치정보
-				</a></li>
-				<li><a href="#">
-					<img src="images/main_img/icon02.png" alt="날씨정보"><br />
-					날씨정보
-				</a></li>
-				<li><a href="#">
-					<img src="images/main_img/icon03.png" alt="공지사항"><br />
-					공지사항
-				</a></li>
-				<li><a href="#">
-					<img src="images/main_img/icon04.png" alt="요금안내"><br />
-					요금안내
-				</a></li>
-				<li><a href="#">
-					<img src="images/main_img/icon05.png" alt="Q&amp;A"><br />
-					Q &amp; A
-				</a></li>
-			</ul>					
-	</div><!-- //quick_menu -->
-
-</div><!-- //container -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div id="footer">	
-	<div class="fwrap">		
-
-			<ul class="list_policy">
-				<li><a href="#">개인정보처리방침</a><span>|</span></li>
-				<li><a href="#">이메일무단수집거부</a><span>|</span></li>
-				<li><a href="#">홈페이지의견</a><span>|</span></li>
-				<li><a href="#">오시는길</a></li>			
-			</ul>
-
-			<p class="address">경기도 양주시 장흥면 권율로 108번길 103(석현리 410) 재단법인 송암스페이스센터</p>
-			<p class="list_tel">
-				TEL 031-894-6004	|	FAX 031-894-6004
-			</p>
-			<p class="copy">COPYRIGHT 2007 SONGAM SPACECENTER ALL RIGHTS RESERVED</p>
-
-	</div><!-- fwrap -->		
-</div><!-- footer -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	</div><!-- //wrap -->
-</div><!-- //all_wrap -->
- </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Generator" content="EditPlus®" />
+    <meta name="Author" content="" />
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"
+    />
+
+    <title>송암 스페이스센터</title>
+    <!-- jquery기본 -->
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-latest.js"
+    ></script>
+
+    <!-- nav -->
+    <script type="text/javascript" src="js/template.js"></script>
+
+    <!-- btn_all_menu -->
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="js/mof.js"></script>
+
+    <!-- 메인배너 -->
+    <!-- <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        var visual = $('#brandVisual > ul > li');
+        var button = $('#buttonList > li');
+        var current = 0;
+
+        button.on({
+          click: function () {
+            var tg = $(this);
+            var i = tg.index();
+            button.removeClass('on');
+            tg.addClass('on');
+            move(i);
+          },
+        });
+        /*추가*/
+        timer();
+        function timer() {
+          setInterval(function () {
+            var n = current + 1;
+            if (n == visual.length) {
+              n = 0;
+            }
+            button.eq(n).trigger('click');
+          }, 3000);
+        }
+        /**/
+        function move(i) {
+          if (current == i) return; //추가
+          var currentEl = visual.eq(current);
+          var nextEl = visual.eq(i);
+          currentEl.css({ left: 0 }).stop().animate({ left: '-100%' });
+          nextEl.css({ left: '100%' }).stop().animate({ left: 0 });
+          current = i;
+        }
+      });
+    </script>
+
+    <!--[if IE
+      ]><script type="text/javascript" src="js/ie.js"></script
+    ><![endif]-->
+
+    <link rel="stylesheet" href="css/reset.css" />
+  </head>
+  <body>
+    <div id="all_wrap">
+      <div id="wrap">
+        <div id="skipnav">
+          <a href="#">주메뉴 바로가기</a>
+          <a href="#">본문 바로가기</a>
+        </div>
+        <!--//skipnav-->
+
+        <div id="all_menu_wrap">
+          <p>
+            <img
+              src="images/main_img/img_all_menu.png"
+              alt="송암스페이스센터 전체메뉴입니다."
+              width="189"
+              height="87"
+            />
+          </p>
+          <nav>
+            <div id="gnb" class="mt10">
+              <h2 class="hide">주메뉴</h2>
+              <ul>
+                <li>
+                  <a href="#" onclick="toggleDepth1MenuGroup('1')">송암별빛</a>
+                  <div id="depth2MenuList_1">
+                    <ul>
+                      <li><a href="sub01.html">설립이념</a></li>
+                      <li><a href="#">시설안내</a></li>
+                      <li><a href="#">오시는길</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" onclick="toggleDepth1MenuGroup('2')"
+                    >별소리모아</a
+                  >
+                  <div id="depth2MenuList_2">
+                    <ul>
+                      <li><a href="#">방송보도자료</a></li>
+                      <li><a href="#">신문잡지보도</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" onclick="toggleDepth1MenuGroup('3')"
+                    >별나래갤러리</a
+                  >
+                  <div id="depth2MenuList_3">
+                    <ul>
+                      <li><a href="#">별빛갤러리</a></li>
+                      <li><a href="#">포토갤러리</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" onclick="toggleDepth1MenuGroup('4')">별소담</a>
+                  <div id="depth2MenuList_4">
+                    <ul>
+                      <li><a href="#">별빛뉴스</a></li>
+                      <li><a href="#">별빛이야기</a></li>
+                      <li><a href="#">별빛 요금안내</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" onclick="toggleDepth1MenuGroup('5')">별빛캠프</a>
+                  <div id="depth2MenuList_5">
+                    <ul>
+                      <li><a href="#">일일 천문교실</a></li>
+                      <li><a href="#">1박2일 우주 과학캠프</a></li>
+                      <li><a href="#">2박3일 우주여행</a></li>
+                      <li><a href="#">챌린저러닝센터 실습</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- //gnb -->
+          </nav>
+
+          <p class="ta_c mt20">
+            <a href="#" id="btnAllMenuClose" title="메뉴닫기">
+              <img
+                src="images/main_img/btn_all_close.png"
+                alt="메뉴닫기"
+                width="85"
+                height="30"
+              />
+            </a>
+          </p>
+        </div>
+        <!-- //all_menu_wrap -->
+
+        <header id="header">
+          <h1>
+            <a href="index.html" id="logo"
+              ><img
+                src="images/main_img/logo.jpg"
+                alt="송암스페이스센터"
+                width="100"
+                height="100"
+            /></a>
+          </h1>
+
+          <p class="btn_all_menu">
+            <a href="#" id="btnAllMenuOpen" title="메뉴열기">
+              <img src="images/main_img/allmenu.png" alt="메뉴열기" />
+            </a>
+          </p>
+          <!-- //btn_all_menu -->
+
+          <div id="topmenu">
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+              <li><a href="#">사이트맵</a></li>
+              <li><a href="#">ENGLISH</a></li>
+            </ul>
+          </div>
+          <!--//topmenu -->
+
+          <div id="nav">
+            <h2 class="hide">주메뉴</h2>
+
+            <ul id="menu">
+              <li>
+                <a href="sub01.html" class="1depth"
+                  ><img src="images/main_img/nav01.gif" alt="송암별빛"
+                /></a>
+                <ul class="sunmenu sun01">
+                  <li><a href="sub01.html">설립이념</a></li>
+                  <li><a href="#">시설안내</a></li>
+                  <li><a href="#">오시는길</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="1depth"
+                  ><img src="images/main_img/nav02.gif" alt="별소리모아"
+                /></a>
+                <ul class="sunmenu sun02">
+                  <li><a href="#">방송보도자료</a></li>
+                  <li><a href="#">신문잡지보도</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="1depth"
+                  ><img src="images/main_img/nav03.gif" alt="별나래갤러리"
+                /></a>
+                <ul class="sunmenu sun03">
+                  <li><a href="#">별빛갤러리</a></li>
+                  <li><a href="#">포토갤러리</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="1depth"
+                  ><img src="images/main_img/nav04.gif" alt="별소담"
+                /></a>
+                <ul class="sunmenu sun04">
+                  <li><a href="#">별빛뉴스</a></li>
+                  <li><a href="#">별빛이야기</a></li>
+                  <li><a href="#">별빛 요금안내</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="1depth"
+                  ><img src="images/main_img/nav05.gif" alt="별빛캠프"
+                /></a>
+                <ul class="sunmenu sun05">
+                  <li><a href="#">일일 천문교실</a></li>
+                  <li><a href="#">1박2일 우주 과학캠프</a></li>
+                  <li><a href="#">2박3일 우주여행</a></li>
+                  <li><a href="#">챌린저러닝센터 실습</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- //menu-->
+          </div>
+          <!-- //nav -->
+
+          <script language="javascript" type="text/javascript">
+            initNavigation();
+          </script>
+        </header>
+        <!-- //header -->
+
+        <div id="container">
+          <div id="Visual">
+            <div id="brandVisual">
+              <ul>
+                <li class="visual_0"><a href="#">배너이미지1</a></li>
+                <li class="visual_1"><a href="#">배너이미지2</a></li>
+                <li class="visual_2"><a href="#">배너이미지3</a></li>
+              </ul>
+            </div>
+            <!-- //brandVisual -->
+            <ul id="buttonList">
+              <li class="on"><a href="#">배너1</a></li>
+              <li><a href="#">배너2</a></li>
+              <li><a href="#">배너3</a></li>
+            </ul>
+            <!-- //buttonList -->
+          </div>
+          <!-- //Visual -->
+
+          <div class="box">
+            <div class="box01">
+              <h3><a href="#">공지사항 ></a></h3>
+              <ul>
+                <li><a href="#">11/18(수) 일반관람 제한 안내</a></li>
+                <li><a href="#">2015년 10월 관측대상</a></li>
+                <li><a href="#">2015년 9월의 관측대상</a></li>
+                <li><a href="#">Windows10 사용자는 꼭 확인...</a></li>
+                <li><a href="#">70주년 광복절! 나라사랑 태극기...</a></li>
+              </ul>
+              <p class="more">
+                <a href="#"
+                  ><img src="images/main_img/more.png" alt="공지사항 더보기"
+                /></a>
+              </p>
+            </div>
+            <!-- //box01 -->
+
+            <div class="box02">
+              <h3><a href="#">개장시간 ></a></h3>
+              <p>
+                매주 월요일 휴무 하절기(4월~12월)<br />
+                화~금,일,공휴일 11:00~21:00<br />
+                토요일11:00~21:30
+              </p>
+              <p class="boxline"></p>
+              <h3><a href="#">티켓매표시간 ></a></h3>
+              <p>
+                화~금,일,공휴일 11:00~19:00<br />
+                토요일11:00~19:30
+              </p>
+            </div>
+            <!-- //box02 -->
+
+            <div class="box03">
+              <h3><a href="#">스타스키친 레스토랑 ></a></h3>
+              <p>
+                화~금,일,공휴일 11:00~20:00<br />
+                (Last Order 19:20분 까지)
+              </p>
+            </div>
+            <!-- //box03 -->
+
+            <div class="box04">
+              <h3><a href="#">단체예약 및 상담문의 ></a></h3>
+              <p>
+                031-894-6000 <br />
+                상담시간 9:30 ~ 18:00(월~토)
+              </p>
+            </div>
+            <!-- //box04 -->
+          </div>
+          <!-- //box -->
+
+          <div class="quick_menu">
+            <h3 class="quickM">QUICK MENU</h3>
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="images/main_img/icon01.png" alt="위치정보" /><br />
+                  위치정보
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/main_img/icon02.png" alt="날씨정보" /><br />
+                  날씨정보
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/main_img/icon03.png" alt="공지사항" /><br />
+                  공지사항
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/main_img/icon04.png" alt="요금안내" /><br />
+                  요금안내
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/main_img/icon05.png" alt="Q&amp;A" /><br />
+                  Q &amp; A
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- //quick_menu -->
+        </div>
+        <!-- //container -->
+
+        <div id="footer">
+          <div class="fwrap">
+            <ul class="list_policy">
+              <li><a href="#">개인정보처리방침</a><span>|</span></li>
+              <li><a href="#">이메일무단수집거부</a><span>|</span></li>
+              <li><a href="#">홈페이지의견</a><span>|</span></li>
+              <li><a href="#">오시는길</a></li>
+            </ul>
+
+            <p class="address">
+              경기도 양주시 장흥면 권율로 108번길 103(석현리 410) 재단법인
+              송암스페이스센터
+            </p>
+            <p class="list_tel">TEL 031-894-6004 | FAX 031-894-6004</p>
+            <p class="copy">
+              COPYRIGHT 2007 SONGAM SPACECENTER ALL RIGHTS RESERVED
+            </p>
+          </div>
+          <!-- fwrap -->
+        </div>
+        <!-- footer -->
+      </div>
+      <!-- //wrap -->
+    </div>
+    <!-- //all_wrap -->
+  </body>
 </html>
