@@ -1,0 +1,8 @@
+@charset "utf-8";
+body,div,h1,h2,h3,p,img,a,header,footer,section,article,nav,time,ul,li,span,strong,small{margin:0; padding:0}
+body{font-size:0.75em; color:#333; font-family:"돋움",dotum,sans-serif,나눔고딕,NanumGothic;}
+ul{list-style-type:none;}
+img{border:none;}
+a:link, a:visited{text-decoration:none; color:#333;}
+a:hover, a:active{text-decoration:underline; color:#333;}
+.hide{width:1px; height:1px; line-height:0; font-size:0; visibility:hidden; overflow:hidden; position:absolute; left:-999px;}

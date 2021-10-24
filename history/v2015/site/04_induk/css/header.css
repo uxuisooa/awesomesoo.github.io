@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+.indexWrap{background:#fff;}
+.inwrap{}
+
+
+
+.headSect{min-width:320px;
+				padding:8px 0 0 0;
+				position:relative;
+				z-index:100;
+				height:93px;
+				border-bottom:1px solid #e1e1e1;
+				}
+.headSect h1{text-align:center;}
+.headSect .menu{position:absolute; top:13px; left:10px;}
+
+.btnMenu{position:absolute; top:0px; left:0px; display:inline-block; width:46px; height:46px; background:url(../images/btn_allMenu.png) no-repeat center center;}
+
+.allmenu{position:absolute; top:0; left:0;
+				font-size:18px;
+				width:100%;}
+.allmenuIn{width:250px;
+				background:url(../images/bg_allmenu.png) repeat-y left top;
+				position:relative;
+				z-index:200;}
+.allmenuIn strong{position:absolute; right:10px; top:12px;}
+.allmenuIn ul{border-top:1px solid #c3c3c3;}
+.allmenuIn ul li{background:#7f2538;
+					font-size:17px;
+					border-bottom:1px solid #e5e5e5;
+					line-height:2.5;
+					display:block;
+					}
+.allmenuIn ul li .bgm{padding-left:30px;
+					font-weight:bold;
+					color:#fff;}
+.allmenuIn ul li ul{}
+.allmenuIn ul li ul li{padding-left:40px;
+						background:#fff;}
+.allmenuIn ul li ul li a{font-weight:normal; padding-left:0;}
+
+
+.dim{position:absolute; top:0; left:0;
+		width:100%;
+		height:100%;
+		background:#000;
+		opacity:0.5;}
+
+.smenu01{}
+.smenu01 ul{}
+.smenu01 ul li{float:left;
+					width:40%;
+					height:34px;
+					text-align:center;
+					padding-top:20px;
+					
+					}
+.smenu01 ul .on{
+					background:url(../images/gb_subMenu.jpg) no-repeat left top/100% 100%;}
+.smenu01 ul .on a{color:#fff;}
+.smenu01 ul li a{text-decoration:none;}

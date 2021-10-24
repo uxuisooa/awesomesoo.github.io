@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+ <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+  <title>GEMPOP</title>
+   <script language="javascript" type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+   <script src="http://code.jquery.com/jquery-latest.js"></script>
+   <script language="javascript" type="text/javascript" src="js/search.js"></script>
+<link rel="stylesheet"  type="text/css"  href="css/common.css"/>
+<link rel="stylesheet"  type="text/css"  href="css/style.css"/>
+ </head>
+
+ <body>
+
+ <div class="all_wrap">
+
+	<div id="header">
+		<div id="u_gnb">
+			<p class="logoimg_auth"><img src="images/logo.png"  alt="Gempop logo" class="authimg"/></p>
+		</div><!-- //u_gnb -->
+	</div><!-- //header -->
+
+	<div class="login_content">
+
+		<div class="login_lang_wrap">
+			<div class="lang_wrap">
+				<label class="certit_login mr10">Language</label><select name="" title="" class="sel_lang">
+						<option value="" selected="selected">한국어</option>
+						<option value="">中國語</option>
+					</select>
+			</div>
+		</div><!-- //login_lang_wrap -->
+
+
+		<div class="login_cer_wrap">
+			<div class="cer_wrap">
+				<label class="certitNum mr10">Step 1</label><label class="certit">서비스 인증</label>
+				<div class="certification">					
+					<img src="images/check_on.png"  alt="인증확인" class="ck_cer"/>
+					<input type="text" class="inpt_cer" title="인증코드입력"  value placeholder="인증코드를 입력해 주세요."/>
+				</div>
+				<button class="bt_cer">확인</button>
+			</div>
+		</div><!-- //login_wrap -->
+
+
+		<div class="login_auth_wrap">	
+			
+				<div class="auth_wrap1">
+					<label class="certitNum mr10">Step 2</label><label class="certit">휴대폰번호 인증</label>
+						<div class="auth_wrapLine">
+							<div class="authCode">						
+								<input type="text" class="inpt_auth1" title="휴대폰번호입력"  value placeholder="휴대폰번호 입력"/>
+								<button class="bt_mobile_submit">인증번호 재발급</button><!-- *****인증번호 발급을 누르면 재발급으로 바뀜***** -->					
+							</div><!-- //authCode -->
+						</div><!-- //auth_wrapLine -->
+						<div class="error off">필수 정보입니다.</div> 
+						<div class="error off">인증번호를 발송했습니다.<br>인증번호가 오지 않으면 입력하신 정보가 정확한지 확인하여 주세요.</div>
+				</div><!-- //auth_wrap1 -->
+
+				<div class="auth_wrap2 mt30">
+					<!--<label class="certit">인증코드</label>-->
+					<div class="auth_wrapLine">
+						<div class="authCode">						
+							<input type="text" class="inpt_auth2" title="인증코드입력"  value placeholder="인증코드 입력"/>
+							<p class="bt_certify_submit">24:58</p>						
+						</div><!-- //authCode -->
+					</div><!-- //auth_wrapLine -->
+					<div class="error off">필수 정보입니다.</div>
+				</div><!-- //auth_wrap2 -->
+
+				<div class="auth_wrap2 mt30">
+				<button class="bt_auth">확인</button>
+				</div><!-- //auth_wrap2 -->
+
+			</div><!-- //login_auth_wrap -->
+	</div><!-- //login_content -->
+
+</div><!-- //all_wrap -->
+ </body>
+</html>

@@ -1,0 +1,475 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ko" xml:lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
+	<meta name="robots" content="all" />
+	<meta name="keywords" content="" />
+	<meta name="description" content=""/>
+	<meta name="author" content=""/>
+	<title>Document</title>
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+<script type="text/javascript" src="js/mains.js"></script>
+<script type="text/javascript" src="js/main_rolling.js"></script>
+<script type="text/javascript" src="js/main_util.js"></script>
+<script  type="text/javascript" src="js/template_on.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="style/sub.css"/>
+
+</head>
+<body>
+<div class="main">
+
+<div id="top">
+
+	<div class="wrap">
+
+		<div id="skipnav">
+			<a href="#">주메뉴 바로가기</a>
+			<a href="#">본문 바로가기</a>
+		</div><!--//skipnav-->
+
+		<h1><a href="index.html"><img src="images/logo.jpg" alt="분당구보건소" /></a></h1>
+
+		<div id="gnb">
+			<ul>
+				<li><a href="login.html">로그인</a></li>
+				<li><a href="join.html">회원가입</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">분당구청</a></li>
+			</ul>
+		</div><!--//gnb-->
+
+		<div id="search">
+			<h2 class="dp_mb"><a href="#" class="ir s_toggle">검색</a></h2>
+			<div>
+				<form id="searchForm" action="#" target="_blank">
+					<fieldset>
+						<legend class="dipy_n">통합검색</legend>
+							<p class="search_txt"><input type="text" name="kwd" id="kwd" value="" class="txt" title="검색어 입력"/> </p>
+							<input type="image" src="images/search_submit.gif" class="submit" alt="검색" title="새창검색"/>
+					</fieldset>
+				</form>
+			</div>
+		</div><!--//search-->
+
+		<div id="nav">
+
+				<h2 class="dp_mb">주메뉴</h2>
+
+				<ul class="over" class="open">
+					<li>
+						<a href="sub01.html">
+						<img src="images_main/nav_1.gif"  alt="보건소안내"/>
+						</a>
+						<ul class="sunmenu">
+							<li><a href="#">인사말</a></li>
+							<li><a href="#">연혁</a></li>
+							<li><a href="#">조직도</a></li>
+							<li><a href="#">보건소위치</a></li>
+							<li><a href="#">보건의료현장</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="sub02.html">
+							<img src="images_main/nav_2.gif"  alt="민원/진료안내"/>
+						</a>
+						<ul class="sunmenu">
+							<li><a href="#">민원서식다운로드</a></li>
+							<li><a href="#">재증명발급안내</a></li>
+							<li><a href="#">임상검사수수료</a></li>
+							<li><a href="#">의약무공지게시판</a></li>
+							<li><a href="#">내과진료</a></li>
+							<li><a href="#">한방진료</a></li>
+							<li><a href="#">물리치료</a></li>
+							<li><a href="#">혈액검사</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="sub03.html" >
+							<img src="images_main/nav_3.gif"  alt="예방접종안내"/>
+						</a>
+						<ul class="sunmenu">
+							<li><a href="#">임시예방접종</a></li>
+							<li><a href="#">영유아예방접종</a></li>
+							<li><a href="#">국가예방접종</a></li>
+							<li><a href="#">취학아동예방접종</a></li>
+							<li><a href="#">B형간염예방접종</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="sub04.html">
+							<img src="images_main/nav_4.gif"  alt="보건서비스"/>
+						</a>
+						<ul class="sunmenu">
+							<li><a href="#">건강증진사업</a></li>
+							<li><a href="#">만성질환관리사업</a></li>
+							<li><a href="#">건강증진센터</a></li>
+							<li><a href="#">결핵관리</a></li>
+							<li><a href="#">구강보건</a></li>
+							<li><a href="#">금연사업</a></li>
+							<li><a href="#">모자보건</a></li>
+							<li><a href="#">방역</a></li>
+							<li><a href="#">성매개감염병예방</a></li>
+							<li><a href="#">건강검진</a></li>
+							<li><a href="#">의료비지원</a></li>
+							<li><a href="#">감염병관리</a></li>
+							<li><a href="#">재보건</a></li>
+							<li><a href="#">방문건강관리</a></li>
+							<li><a href="#">치매관리</a></li>
+							<li><a href="#">장기기증등록</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="sub05.html">
+						<img src="images_main/nav_5.gif"  alt="기관/시설정보"/>
+						</a>
+						<ul class="sunmenu">
+							<li><a href="#">병원</a></li>
+							<li><a href="#">산후조리</a></li>
+							<li><a href="#">안경업소</a></li>
+							<li><a href="#">약국</a></li>
+							<li><a href="#">의료기기</a></li>
+							<li><a href="#">의원</a></li>
+							<li><a href="#">치과기공소</a></li>
+							<li><a href="#">치과의원</a></li>
+							<li><a href="#">한의원</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="sub06.html">
+						<img src="images_main/nav_6.gif"  alt="참여/소식"/>
+						</a>
+						<ul class="sunmenu">
+							<li><a href="#">공지사항</a></li>
+							<li><a href="#">자주묻는질문</a></li>
+							<li><a href="#">건강교육일정</a></li>
+							<li><a href="#">모집공고</a></li>
+							<li><a href="#">민원상담실</a></li>
+							<li><a href="#">건강신문고</a></li>
+							<li><a href="#">사이트맵</a></li>
+						</ul>
+					</li>
+
+				</ul><!-- //over, open -->
+				<div id="menuBg"></div>
+			</div><!-- //nav -->
+
+
+	</div><!--//warp-->
+
+</div><!--//top-->
+
+
+
+
+
+
+
+
+
+<div id="container_m">
+	<div class="wrap">
+
+
+
+
+
+		<div class="box01">
+			<img src="images_main/title_img.jpg"  alt="건강도시 분당! 가족건강을 지켜주는 우리구 보건소. 분당구민의 건강한 삶을 함께 만들어가겠습니다."/>
+		</div><!-- //box01 -->
+
+
+
+
+
+
+		<div class="quick_menu">
+						<ul>
+							<li><a href="#" class="qui q1"><img src="images_main/quick_icon_1.png" alt="금연클리닉"/></a></li>
+							<li><a href="#" class="qui q2"><img src="images_main/quick_icon_2.png" alt="예방접종"/></a></li>
+							<li><a href="#" class="qui q3"><img src="images_main/quick_icon_3.png" alt="방문보건"/></a></li>
+							<li><a href="#" class="qui q4"><img src="images_main/quick_icon_4.png" alt="건강검진"/></a></li>
+							<li><a href="#" class="qui q5"><img src="images_main/quick_icon_5.png" alt="모자보건"/></a></li>
+							<li><a href="#" class="qui q6"><img src="images_main/quick_icon_6.png" alt="심폐소생술"/></a></li>
+							<li><a href="#" class="qui q7"><img src="images_main/quick_icon_7.png" alt="의료비지원"/></a></li>
+							<li><a href="#" class="qui q8"><img src="images_main/quick_icon_8.png" alt="당번약국"/></a></li>
+							<li><a href="#" class="qui q9"><img src="images_main/quick_icon_9.png" alt="결핵관리"/></a></li>
+						</ul>
+
+		</div><!-- //quick_menu -->
+
+
+
+
+
+		<div class="box02">
+			<ul class="b02tab">
+
+				<li class="tab t1"><h3><a href="#"><img src="images_main/btn_1_on.gif"  alt="공지사항"/></a></h3>
+
+					<ul>
+						<li><span class="subject"><a href="#">[분당구보건소]10월임산부 다소미스페셜 프로그램 안내모집</a></span><span class="date">2015-10-01</span></li>
+						<li><span class="subject"><a href="#">[분당구보건소] 3기 주말(토요일) 임산부 다소미 교실 일정 변경 안내</a></span><span class="date">2015-09-25</span></li>
+						<li><span class="subject"><a href="#">2015년 성남시 60세이상 시민 독감 예방접종</a></span><span class="date">2015-09-10</span></li>
+						<li><span class="subject"><a href="#">2015년 제5기 오감발달놀이교실 대상자 모집 안내 (분당구)</a></span><span class="date">2015-09-01</span></li>
+						<li><span class="subject"><a href="#">결핵 BCG(피내용) 예방접종 안내</a></span><span class="date">2015-08-28</span></li>
+					</ul>
+
+					<p class="more"><a href="#"><img src="images_main/box02_bt.gif" alt="공지사항 더보기"/></a></p>
+
+
+				</li>
+
+				<li class="tab t2"><h3><a href="#"><img src="images_main/btn_2_off.gif"  alt="모집공고"/></a></h3>
+
+					<ul>
+						<li><span class="subject"><a href="#">2015년 독감예방접종 전담인력 모집공고</a></span><span class="date">2015-08-27</span></li>
+						<li><span class="subject"><a href="#">기간제근로자(임상병리사) 모집 공고(재공고)</a></span><span class="date">2015-08-25</span></li>
+						<li><span class="subject"><a href="#">[판교보건지소] 진료실 대체인력 모집</a></span><span class="date">2015-08-17</span></li>
+						<li><span class="subject"><a href="#">기간제근로자(금연상담사) 모집 공고</a></span><span class="date">2015-08-10</span></li>
+						<li><span class="subject"><a href="#">감염병 및 결핵관리 간호사 모집 공고</a></span><span class="date">2015-07-28</span></li>
+					</ul>
+
+					<p class="more"><a href="#"><img src="images_main/box02_bt.gif" alt="모집공고 더보기"/></a></p>
+
+
+				</li>
+
+				<li class="tab t3"><h3><a href="#"><img src="images_main/btn_3_off.gif"  alt="다소미 자료실"/></a></h3>
+
+					<ul>
+						<li><span class="subject"><a href="#">미숙아 및 선천성이상아 의료비 지원사업 안내</a></span><span class="date">2014-10-29</span></li>
+						<li><span class="subject"><a href="#">분당구보건소 다소미 평일프로그램 4기 동영상</a></span><span class="date">2014-10-28</span></li>
+						<li><span class="subject"><a href="#">영유아 건강검진사업</a></span><span class="date">2014-10-15</span></li>
+						<li><span class="subject"><a href="#">신생아 청각 선별검사 안내</a></span><span class="date">2014-09-19</span></li>
+						<li><span class="subject"><a href="#"> 다소미 평일프로그램 3기 수료 동영상입니다</a></span><span class="date">2014-07-21</span></li>
+					</ul>
+
+					<p class="more"><a href="#"><img src="images_main/box02_bt.gif" alt="다소미 자료실 더보기"/></a></p>
+
+
+				</li>
+
+				<li class="tab t4"><h3><a href="#"><img src="images_main/btn_4_off.gif"  alt="자주묻는 질문"/></a></h3>
+
+					<ul>
+						<li><span class="subject"><a href="#">성매개감염병검사도 하나요?</a></span><span class="date">2009-03-04</span></li>
+						<li><span class="subject"><a href="#">스켈링(치석제거)이 가능한가요?</a></span><span class="date">2007-05-17</span></li>
+						<li><span class="subject"><a href="#">치과치료가 가능한가요?</a></span><span class="date">2007-05-17</span></li>
+						<li><span class="subject"><a href="#">유축기 대여하려면 어떻게 하면 되나요?</a></span><span class="date">2007-05-17</span></li>
+						<li><span class="subject"><a href="#">임산부 등록을 하려면 어떻게 하면 되나요?</a></span><span class="date">2007-05-17</span></li>
+					</ul>
+
+					<p class="more"><a href="#"><img src="images_main/box02_bt.gif" alt="자주묻는 질문 더보기"/></a></p>
+
+
+				</li>
+
+				<li class="tab t5"><h3><a href="#"><img src="images_main/btn_5_off.gif"  alt="민원상담실"/></a></h3>
+
+					<ul>
+						<li><span class="subject"><a href="#">안내 표지나 안..</a></span><span class="date">2015-10-03</span></li>
+						<li><span class="subject"><a href="#">콜레스테롤 검사..</a></span><span class="date">2015-10-02</span></li>
+						<li><span class="subject"><a href="#">독감예방접종</a></span><span class="date">2015-10-01</span></li>
+						<li><span class="subject"><a href="#">보건소 내 인바..</a></span><span class="date">2015-09-24</span></li>
+						<li><span class="subject"><a href="#">금연클리닉 뭡니..</a></span><span class="date">2015-09-21</span></li>
+					</ul>
+
+					<p class="more"><a href="#"><img src="images_main/box02_bt.gif" alt="민원상담실 더보기"/></a></p>
+
+
+				</li>
+
+				<li class="tab t6"><h3><a href="#"><img src="images_main/btn_6_off.gif"  alt="건강교육일정"/></a></h3>
+
+					<ul>
+						<li><span class="subject"><a href="#">2015년 판교보건지소 프로그램일정[변경]</a></span></li>
+						<li><span class="subject"><a href="#">[판교보건지소]2015년 오감발달교실 3기 수강생 모집 안내</a></span></li>
+						<li><span class="subject"><a href="#">[판교보건지소]2015년 제3기 터치터치 뮤직놀이교실 참여자 모집</a></span></li>
+						<li><span class="subject"><a href="#">[판교보건지소] 이유식교실 운영 안내</a></span></li>
+						<li><span class="subject"><a href="#">[판교보건지소] 2015년 제2기 오감발달놀이교실 모집</a></span></li>
+					</ul>
+
+					<p class="more"><a href="#"><img src="images_main/box02_bt.gif" alt="건강교육일정 더보기"/></a></p>
+
+				</li>
+
+			</ul>
+
+		</div><!-- //box02 -->
+
+
+
+
+
+
+
+		<div class="box03">
+			<a href="#"><img class="work1" src="images_main/time_img.gif"  alt="근무시간안내 토,일요일과 공휴일은 휴무입니다. 평일 진료시간은 오전 9시부터 오후6시입니다. 점심시간은 오후12시부터 1시까지 입니다."/></a>
+			<a href="#"><img class="work2" src="images_main/bt_1.gif"  alt="담당업무"/></a>
+			<a href="#"><img class="work3" src="images_main/bt_2.gif"  alt="찾아오시는길"/></a>
+		</div><!-- //box03 -->
+
+
+
+
+
+
+		<div class="box04">
+
+			<!--동그라미 버튼-->
+			<ul class="box04_btn">
+				<li><a href="#" onmouseover="loctionBt(0);stop()" onfocus="loctionBt(0);stop()"><img src="images_main/bt_3_1_on.png"  alt="판교보건지소 이유식 교실 운영"/></a></li>
+				<li><a href="#" onmouseover="loctionBt(-1);stop()" onfocus="loctionBt(-1);stop()"><img src="images_main/bt_3_2.png"  alt="결핵 BCG 피내용 백신 수입지연에 따른 예방접종 안내"/></a></li>
+				<li><a href="#" onmouseover="loctionBt(-2);stop()" onfocus="loctionBt(-2);stop()"><img src="images_main/bt_3_3.png"  alt="행복콘서트"/></a></li>
+			</ul>
+
+			<!--이미지-->
+			<ul class="box04_banner">
+				<li><a href="#"><img src="images_main/img_0.jpg"  alt=""/></a></li>
+				<li><a href="#"><img src="images_main/img_0.jpg"  alt=""/></a></li>
+				<li><a href="#"><img src="images_main/img_0.jpg"  alt=""/></a></li>
+			</ul>
+
+
+		</div><!-- //box04 -->
+
+
+
+
+
+
+
+
+
+		<div class="box05" id="snswrap">
+
+				<h3><a href="#tab_01"  class="tab"><img src="images_main/sns_f_on.png"  alt="페이스북"/></a></h3>
+
+				  <div class="txt" id="tab_01">
+					<p class="snsimg"><img src="images_main/sns_profile.jpg" alt=""/><span>분당구보건소</span><p>
+					<ul class="facebook">
+						<li>요즘 날씨가 좋네요!! 그렇다고 건강에 소홀이 하면 안되는거 모두 아시죠?<br/>그럼 분당구 보건소와 함께 건강한 하루 보내세요.<br/><span class="date_sns">2015년 10월 04일</span></li>
+						<li>예방접종 맞으셨는지 체크해 보셨나요? 아직 안하셨다면 분당구 보건소와 함께 자신에게 맞는 예방접종을 하러 가볼까요~?<br/><span class="date_sns">2015년 10월 01일</span></li>
+						<li>분당구 시민여러분. 올 추석에도 건강하고 활기찬 하루 보내시길바랍니다.<br/><span class="date_sns">2015년 10월26일</span></li>
+					</ul>
+			</div>
+
+
+			 <h3><a href="#tab_02"  class="tab"><img src="images_main/sns_t_off.png"  alt="트위터"/></a></h3>
+
+				<div class="txt" id="tab_02">
+					<p class="snsimg"><img src="images_main/sns_profile.jpg" alt=""/><span>분당구보건소</span><p>
+					<ul class="facebook">
+						<li>분당구 보건소가 트위터 계정을 만들었어요! <br/>
+						이제 좀 더 빠르게 소식을 받아보세요. <br/>
+						팔로팔로미!<br/>
+						<span class="date_sns">2015년 10월 05일</span></li>
+					</ul>
+			</div>
+
+
+		       <h3><a href="#tab_03"  class="tab"><img src="images_main/sns_k_off.png"  alt="카카오스토리"/></a></h3>
+
+					<div class="txt" id="tab_03">
+					<p class="snsimg"><img src="images_main/sns_profile.jpg" alt=""/><span>분당구보건소</span><p>
+					<ul class="facebook">
+						<li>카카오스토리 친구를 맺어서 분당구 보건소의 <br/>
+						소식을 빨리 받아보세요.<br/><span class="date_sns">2015년 10월 07일</span></li>
+					</ul>
+			</div>
+
+
+
+            <h3 class="bl"><a href="#tab_04"  class="tab"><img src="images_main/sns_b_off.png"  alt="네이버블로그"/></a></h3>
+
+					<div class="txt" id="tab_04">
+					<p class="snsimg"><img src="images_main/sns_profile.jpg" alt=""/><span>분당구보건소</span><p>
+					<ul class="facebook">
+						<li>분당구보건소의 블로그를 오픈했어요.<br/>
+						이웃추가로 빠르게 소식을 받아보세요~<br/>
+						<span class="date_sns">2015년 10월 07일</span></li>
+					</ul>
+			</div>
+
+		</div><!-- //box05 -->
+	<script  type="text/javascript">initTabMenu("snswrap")</script>
+
+
+
+
+
+
+
+
+		<div class="box06">
+			<div class="banner">
+
+				<h3 class="skip">배너존</h3>
+
+					<a href="javascript:bannerLeft();" class="btnleft">
+						<img src="images_main/bt_left.png" alt="왼쪽이동"/>
+					</a>
+
+					<div class="bannerzone">
+						<ul>
+							<li><a href="#" target="_blank" title="새창"><img src="bannerzone/bnr_1.JPG" alt="성남시"/></a></li>
+							<li><a href="#" target="_blank" title="새창"><img src="bannerzone/bnr_2.JPG" alt="성남시중독관리통합지원센터"/></a></li>
+							<li><a href="#" target="_blank" title="새창"><img src="bannerzone/bnr_3.JPG" alt="성남시정신건강증진센터,성남시자살예방센터"/></a></li>
+							<li><a href="#" target="_blank" title="새창"><img src="bannerzone/bnr_4.JPG" alt="응급의료상담,병의원안내 자동심장충격기 설치장소 119"/></a></li>
+							<li><a href="#" target="_blank" title="새창"><img src="bannerzone/bnr_5.JPG" alt="성남시 소아청소년 정신건강센터"/></a></li>
+							<li><a href="#" target="_blank" title="새창"><img src="bannerzone/bnr_6.JPG" alt="질병관리본부"/></a></li>
+							<li><a href="#" target="_blank" title="새창"><img src="bannerzone/bnr_7.JPG" alt=" 예방접종 도우미"/></a></li>
+							<li><a href="#" target="_blank" title="새창"><img src="bannerzone/bnr_8.JPG" alt="성남시 유헬스로드"/></a></li>
+						</ul>
+					</div>
+
+				<a href="javascript:bannerRight();" class="btnright">
+					<img src="images_main/bt_right.png" alt="오른쪽이동"/>
+				</a>
+
+			</div><!--//banner-->
+
+		</div><!-- //box06 -->
+
+
+	</div><!-- //wrap -->
+</div><!-- //container -->
+
+
+
+
+
+
+
+<div id="footer">
+
+	<div class="wrap">
+
+			<p class="footerlogo"><img src="images/logo_footer.jpg" alt="분당구보건소"/></p>
+
+			<ul>
+				<li>개인정보처리방침</li>
+				<li>이메일무단수집거부</li>
+				<li>홈페이지의견</li>
+				<li>오시는길</li>
+			</ul>
+
+			<address>우편번호 : 13496 경기도 성남시 분당구 양현로 306(야탑동)           대표전화 : 729-3990</address>
+
+			<p class="copy">Copyright&copy;2007 Bundang-Gu Health Center. All right Resered. </p>
+
+	</div><!-- wrap -->
+</div><!-- footer -->
+
+</div><!--//main-->
+
+
+
+</body>
+</html>

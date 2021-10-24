@@ -1,0 +1,58 @@
+@charset "utf-8";
+@import url(base.css);
+@import url(header.css);
+@import url(footer.css);
+
+
+.container{width:100%;}
+.quicklink{text-align:center;}
+.quicklink ul{width:100%;
+				overflow:hidden;
+				padding-top:39px;}
+.quicklink ul li{float:left;
+					width:33%;
+					padding-bottom:27px;}
+.quicklink ul li a img{}
+
+
+
+
+/*sub*/
+.introWrap{}
+.introWrap .img01_1{width:98%; 
+							padding:0 1%;}
+.introWrap .img01_2{width:98%; 
+							padding:0 1%;}
+.introWrap .title01{width:98%; 
+						padding:0 1%; 
+						margin-top:15px;}
+.introWrap .subtitle01{width:98%; 
+							padding:0 1%; 
+							color:#937682; 
+							font-size:15px;
+							font-weight:bold;
+							text-align:center;
+							margin-bottom:15px;}
+.introWrap p{width:98%; 
+				padding:0 1%;
+				margin-bottom:10px;}
+.txt01{color:#7f2538;}
+.sub1txt{width:92%; margin-left:4%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+
+.dp_mb {
+    display:none;
+	}
+
+/*skipnav,h1,gnb,search,nav*/
+h1{
+	padding:62px 0 0px 1px;}
+#top h1{
+    padding-top: 62px;}
+
+/*로그인 회원가입 사이트맵 분당구청*/
+.gnb li{
+	float:left;
+	padding:0 20px;
+	font-size:15px;}
+.gnb li a{
+	color:#fff;
+	}
+#top #gnb{
+	position:absolute;
+    background: #007cb7 none repeat scroll 0 0;
+    padding:12px 200px 12px 12px;
+    position: absolute;
+    right:0px;
+    top: 0;
+	overflow: hidden;
+	}
+#top #gnb > ul > li {
+    float: left;
+    margin: 0 8px;}
+#top #gnb > ul > li > a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;}
+
+/*통합검색*/
+#top #search {
+    padding:7px 10px 6px 0px;
+    position:absolute;
+    right: 0;
+    top: 0;
+	}
+#top #search input {
+    border:0 none;
+	}
+#top #search .search_txt {
+    background:#fff none repeat scroll 0 0;
+    float:left;
+    height: 23px; 
+    padding: 4px 3px 0;
+	}
+
+/*주메뉴*/
+/*1depth*/
+#nav{}
+#nav > ul {
+    position:absolute;
+    right: 0;
+    top: 81px;
+	}
+#nav > ul > li {
+    float:left;
+    text-align:center;
+	width:136px;
+
+	
+
+	}
+#nav > ul > li > a {
+    color: #646464;
+    display:block;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    padding-bottom: 0px;
+	}
+.open{background:url(../images_main/bg_nav_open.gif) repeat-x; height:498px; margin-top:15px;}
+
+/*2depth*/
+#nav .sunmenu{
+	position:absolute;    
+	border-left:1px solid #e2e2e2;	
+    height:483px;
+    width:131px;
+    padding-top:15px;
+    padding-left:15px;
+	margin:0;
+    text-align:left;
+	line-height:2.3;
+	float:left;
+	overflow:hidden;
+	display:none;
+	}

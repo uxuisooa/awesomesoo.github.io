@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+ <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+  <title>GEMPOP</title>
+   <script language="javascript" type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+   <script src="http://code.jquery.com/jquery-latest.js"></script>
+   <script language="javascript" type="text/javascript" src="js/search.js"></script>
+<link rel="stylesheet"  type="text/css"  href="css/common.css"/>
+<link rel="stylesheet"  type="text/css"  href="css/style.css"/>
+ </head>
+
+ <body>
+<div id="all_wrap">
+
+	<div id="header">
+		<div id="u_gnb">
+			<button class="bt_previous" onclick="location.href='receivemes.html' "></button>	
+			<h2>받은메시지</h2><em class="none">12</em>
+			<button class="bt_delete"></button>
+		</div><!-- //u_gnb -->
+		<div id="ms_folder">
+			<ul class="ms_folderTitle_tab">
+				<li><button class="tab_1 on" onclick="location.href='receivemes.html' ">받은메시지</button></li>
+				<li><button class="tab_2" onclick="location.href='sendmes.html' ">보낸메시지</button></li>
+			</ul><!-- //ms_folderTitle -->
+		</div><!-- //ms_folder -->
+	</div><!-- //header -->
+
+	<div id="content">
+
+		<div class="bg_all_ms_chk">
+			<div class="all_ms_chkW">
+				<input type="checkbox" name="allmail" class="all_ms_chk" /> <span class="all_sel">전체선택</span>
+			</div><!-- //all_ms_chkW -->
+		</div><!-- //bg_all_ms_chk -->
+					   
+		<ul class="ms_list"><!-- S 받은메시지----------------------------------------------->
+
+			<li>
+				<input type="checkbox" name="message" class="ms_chk checked" />
+				
+
+				<div class="m_link_delv">			
+					<p class="m_title">
+						<em class="sev_img mep"></em>
+						<strong class="user">MEP</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">제조작업지시 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link_delv -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic"></span>
+				<em class="ic_file"></em>
+			</li>
+
+			<li>
+				<input type="checkbox" name="message" class="ms_chk" />
+
+				<div class="m_link_delv">			
+					<p class="m_title">
+						<em class="sev_img jobis"></em>
+						<strong class="user">JOBIS</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">제조작업지시 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link_delv -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic"></span>
+				<em class="ic_file_off"></em>
+			</li>
+
+			<li>
+				<input type="checkbox" name="message" class="ms_chk checked" />
+
+				<div class="m_link_delv">			
+					<p class="m_title">
+						<em class="sev_img cep"></em>
+						<strong class="user">CEP</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">제조작업지시 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link_delv -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic"></span>
+				<em class="ic_file_off"></em>
+			</li>
+
+			<li>
+				<input type="checkbox" name="message" class="ms_chk" />
+
+				<div class="m_link_delv">			
+					<p class="m_title">
+						<em class="sev_img oms"></em>
+						<strong class="user">OMS</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">제조작업지시 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link_delv -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic "></span>
+				<em class="ic_file"></em>
+			</li>
+
+			<li>
+				<input type="checkbox" name="message" class="ms_chk checked" />
+
+				<div class="m_link_delv">			
+					<p class="m_title">
+						<em class="sev_img_off mep_off"></em>
+						<strong class="user">MEP</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">제조작업지시 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link_delv -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic_off"></span>
+				<em class="ic_file_off"></em>
+			</li>
+
+			<li>
+				<input type="checkbox" name="message" class="ms_chk" />
+
+				<div class="m_link_delv">			
+					<p class="m_title">
+						<em class="sev_img_off jobis_off"></em>
+						<strong class="user">JOBIS</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">제조작업지시 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link_delv -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic_off"></span>
+				<em class="ic_file_off"></em>
+			</li>
+
+			<li>
+				<input type="checkbox" name="message" class="ms_chk" />
+
+				<div class="m_link_delv">			
+					<p class="m_title">
+						<em class="sev_img_off cep_off"></em>
+						<strong class="user">CEP</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">제조작업지시 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link_delv -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic_off"></span>
+				<em class="ic_file_off"></em>
+			</li>
+
+			<li>
+				<input type="checkbox" name="message" class="ms_chk" />
+
+				<div class="m_link_delv">			
+					<p class="m_title">
+						<em class="sev_img_off oms_off"></em>
+						<strong class="user">OMS</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">제조작업지시 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link_delv -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic_off "></span>
+				<em class="ic_file_off"></em>
+			</li>
+
+
+
+
+
+
+
+
+
+
+			<li>
+				<input type="checkbox" name="message" class="ms_chk" />
+
+				<div class="m_link_delv">			
+					<p class="m_title">
+						<em class="sev_img_off oms_off"></em>
+						<strong class="user">OMS</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">제조작업지시 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link_delv -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic_off "></span>
+				<em class="ic_file_off"></em>
+			</li><li>
+				<input type="checkbox" name="message" class="ms_chk" />
+
+				<div class="m_link_delv">			
+					<p class="m_title">
+						<em class="sev_img_off oms_off"></em>
+						<strong class="user">OMS</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">제조작업지시 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link_delv -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic_off "></span>
+				<em class="ic_file_off"></em>
+			</li><li>
+				<input type="checkbox" name="message" class="ms_chk" />
+
+				<div class="m_link_delv">			
+					<p class="m_title">
+						<em class="sev_img_off oms_off"></em>
+						<strong class="user">OMS</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">제조작업지시 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link_delv -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic_off "></span>
+				<em class="ic_file_off"></em>
+			</li><li>
+				<input type="checkbox" name="message" class="ms_chk" />
+
+				<div class="m_link_delv">			
+					<p class="m_title">
+						<em class="sev_img_off oms_off"></em>
+						<strong class="user">OMS</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">제조작업지시 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link_delv -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic_off "></span>
+				<em class="ic_file_off"></em>
+			</li>
+
+		</ul><!-- //ms_list --><!-- //받은메시지-->
+				
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<ul class="ms_list_sent dn"><!-- S 보낸메시지------------------------------------------------>
+
+			<li>
+				<input type="checkbox" name="message" class="ms_chk checked" />
+
+				<div class="m_link_delv">			
+					<p class="m_title">
+						<em class="sev_img_off mep_off"></em>
+						<strong class="user">MEP</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">제조작업지시 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link_delv -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic_off"></span>
+				<em class="ic_file_off"></em>
+			</li>
+
+			<li>
+				<input type="checkbox" name="message" class="ms_chk" />
+
+				<div class="m_link_delv">			
+					<p class="m_title">
+						<em class="sev_img_off jobis_off"></em>
+						<strong class="user">JOBIS</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">제조작업지시 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link_delv -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic_off"></span>
+				<em class="ic_file_off"></em>
+			</li>
+
+			<li>
+				<input type="checkbox" name="message" class="ms_chk" />
+
+				<div class="m_link_delv">			
+					<p class="m_title">
+						<em class="sev_img_off cep_off"></em>
+						<strong class="user">CEP</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">제조작업지시 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link_delv -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic_off"></span>
+				<em class="ic_file_off"></em>
+			</li>
+
+			<li>
+				<input type="checkbox" name="message" class="ms_chk" />
+
+				<div class="m_link_delv">			
+					<p class="m_title">
+						<em class="sev_img_off oms_off"></em>
+						<strong class="user">OMS</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">제조작업지시 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link_delv -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic_off "></span>
+				<em class="ic_file_off"></em>
+			</li>
+
+			<li>
+				<input type="checkbox" name="message" class="ms_chk" />
+
+				<div class="m_link_delv">			
+					<p class="m_title">
+						<em class="sev_img_off oms_off"></em>
+						<strong class="user">OMS</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">제조작업지시 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link_delv -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic_off "></span>
+				<em class="ic_file_off"></em>
+			</li>
+
+			<li>
+				<input type="checkbox" name="message" class="ms_chk" />
+
+				<div class="m_link_delv">			
+					<p class="m_title">
+						<em class="sev_img_off oms_off"></em>
+						<strong class="user">OMS</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">제조작업지시 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link_delv -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic_off "></span>
+				<em class="ic_file_off"></em>
+			</li>
+
+			<li>
+				<input type="checkbox" name="message" class="ms_chk" />
+
+				<div class="m_link_delv">			
+					<p class="m_title">
+						<em class="sev_img_off oms_off"></em>
+						<strong class="user">OMS</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">제조작업지시 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link_delv -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic_off "></span>
+				<em class="ic_file_off"></em>
+			</li>
+
+			<li>
+				<input type="checkbox" name="message" class="ms_chk" />
+
+				<div class="m_link_delv">			
+					<p class="m_title">
+						<em class="sev_img_off oms_off"></em>
+						<strong class="user">OMS</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">제조작업지시 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link_delv -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic_off "></span>
+				<em class="ic_file_off"></em>
+			</li>
+
+			<li>
+				<input type="checkbox" name="message" class="ms_chk" />
+
+				<div class="m_link_delv">			
+					<p class="m_title">
+						<em class="sev_img_off oms_off"></em>
+						<strong class="user">OMS</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">제조작업지시 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link_delv -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic_off "></span>
+				<em class="ic_file_off"></em>
+			</li>
+
+			<li>
+				<input type="checkbox" name="message" class="ms_chk" />
+
+				<div class="m_link_delv">			
+					<p class="m_title">
+						<em class="sev_img_off oms_off"></em>
+						<strong class="user">OMS</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">제조작업지시 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link_delv -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic_off "></span>
+				<em class="ic_file_off"></em>
+			</li>
+
+
+		</ul><!-- //ms_list --><!-- //보낸메시지-->
+	</div><!-- //content -->
+
+</div><!-- //all_wrap -->
+ </body>
+</html>

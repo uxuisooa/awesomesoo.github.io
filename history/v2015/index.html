@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>UIUXSOOA Portfolio</title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="js/boxslider/jquery.bxslider.min.css"/><!-- boxslider -->
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script><!-- gnbslide *최신CDN 위에 써야함 -->
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script language="javascript" type="text/javascript" src="js/boxslider/jquery.bxslider.min.js"></script><!-- boxslider -->		
+		<script src="js/mouseover.js"></script>				
+		<script src="js/layerpop.js"></script>				
+		
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="header">
+				<div class="top">
+					<h1><a href="index.html"><span class="logo"></span></a></h1>
+					<ul class="menu">
+						<li><a href="#sec2">About</a></li>
+						<li><a href="#sec3">Works</a></li>
+						<li><a href="#sec4">Design</a></li>
+						<li><a href="#sec5">Contact</a></li>
+					</ul>
+					<button type="button" class="btn_gnb"></button>
+				</div><!-- //top -->
+			</div><!-- //header -->
+
+			<div class="gnb_wrap">
+				<div onclick="history.back();" class="gnb_cover"></div>
+				<ul class="gnb">					
+					<li><a href="#sec2">About</a></li>
+					<li><a href="#sec3">Works</a></li>
+					<li><a href="#sec4">Design</a></li>
+					<li><a href="#sec5">Contact</a></li>
+				</ul>
+			</div><!-- //gnb_wrap -->
+			<script  src="js/gnbslide.js"></script><!-- gnbslide -->
+
+
+			<div class="content">
+				<div id="sec1" class="sec1">
+					<span class="img_welcome"></span><div class="img_phone"><ul class="btn_phone">
+						<li><a href="#sec2" class="btn_about"><span class="blind">About</span></a></li>
+						<li><a href="#sec3" class="btn_works"><span class="blind">Works</span></a></li>
+						<li><a href="#sec4" class="btn_design"><span class="blind">Design</span></a></li>
+						<li><a href="#sec5" class="btn_contect"><span class="blind">Contact</span></a></li>
+					</ul></div>
+				</div><!-- //sec1 -->
+
+				<div id="sec2" class="sec2">
+					<h2 class="title">ABOUT</h2>
+					<div id="sec2_slide_wrap">
+						<div class="sec2_banner_wrap">
+							<ul class="sec2_banner">
+								<li class="sec2_pg1"><h3 class="title_sub">WORK PROCESS</h3><span class="img_pg1"></span></li>
+								<li class="sec2_pg2"><h3 class="title_sub">MY SERVICES</h3>
+									<ul class="lst_services">
+										<li><span class="img_srv_1"></span><span class="tit_srv">Web Standard Development<br/>웹사이트 퍼블리싱&UI개발</span><span class="txt_srv">인터넷익스플로러(IE)에 국한되지 않은 크롬(Chrome),사파리(Safari),파이어 폭스(Fire fox) 등과 호환이 되도록 웹표준 방식으로 제작합니다.</span></li>
+										<li><span class="img_srv_2"></span><span class="tit_srv">Responsive Web Development<br/>반응형 레이아웃 웹사이트 퍼블리싱&UI개발</span><span class="txt_srv">모바일, 태블릿, PC 등 어디에서나 최적화된 사이즈로 웹사이트의 접속이 가능하도록 제작합니다.</span></li>
+										<li><span class="img_srv_3"></span><span class="tit_srv">Mobile Web Development<br/>모바일 웹사이트 퍼블리싱&UI개발</span><span class="txt_srv">모바일에 최적화 된 웹사이트로 누구나 쉡게 이용할 수 있도록 제작합니다.</span></li>
+									</ul>
+								</li>
+								<li class="sec2_pg3"><h3 class="title_sub">TECHNICALS SKILLS</h3>
+									<span class="img_skl_v1"></span>
+									<ul class="lst_skl_v2">
+										<li>HTML5</li>
+										<li>CSS3</li>
+										<li>JavaScript</li>
+										<li>jQuery</li>
+										<li>Adobe Creative Suite</li>
+									</ul>										
+								</li>									
+								<li class="sec2_pg4"><h3 class="title_sub">EXPERIENCES</h3>								
+									<span class="img_experiences_v1"></span>
+									<ul class="lst_experiences_v2">
+										<li>2009 - Gaewoon Middle School Graduation</li>
+										<li>2011 - Konkuk University Art Competition</li>
+										<li>2011 - Kyung hee University Art Competition</li>
+										<li>2011 - Sahmyook University Art Competition</li>
+										<li>2011 - Suwon University Art Competition</li>
+										<li>2012 - Sungshin High School</li>
+										<li>2013 - Korea design treends Contest(Poster)</li>
+										<li>2014 - Soki korea illustration(Illustration, Branding)</li>
+										<li>2016 - Induk Universtiy Graduation</li>
+									</ul>	
+								</li>
+							</ul>
+						</div>
+					</div><!-- //sec2_slide_wrap -->
+				</div><!-- //sec2 -->
+				<script type="text/javascript">
+					//<![CDATA[
+					var jQ182 = $.noConflict(true);
+					jQ182(document).ready(function(){
+						 jQ182('.sec2_banner').bxSlider({
+							auto: true,
+							autoControls: true,
+							stopAutoOnClick: true,
+							speed: 500,
+							pause: 3000,
+							mode:'horizontal', //horizontal', 'vertical', 'fade'
+							pager: true
+						});
+					});
+					//]]>
+				</script>
+
+				<div id="sec3" class="sec3">
+					<h2 class="title">WORKS</h2>
+					<div class="lst_works_wrap">
+						<ul class="lst_works">
+							<li><figure class="snip_typ1">
+								<img src="img/sec3/wimg/wimg_1.jpg" alt="" />
+								<figcaption>
+									<h3>분당구보건소</h3>
+									<p>2016 HTML4, 표준코딩<br/>완성도 : 메인100%, 서브100%</p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="site/01_bundanghealth/index.html"></a>
+							</figure></li>
+							<li><figure class="snip_typ1">
+								<img src="img/sec3/wimg/wimg_2.jpg" alt="" />
+								<figcaption>
+									<h3>송암스페이스센터</h3>
+									<p>2016 반응형, 모바일<br/>완성도 : 메인100%, 서브1/6</p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="site/02_songam/index.html"></a>
+							</figure></li>
+							<li><figure class="snip_typ1">
+								<img src="img/sec3/wimg/wimg_3.jpg" alt="" />
+								<figcaption>
+									<h3>제주민속촌</h3>
+									<p>2016 HTML5<br/>완성도 : 메인100%, 서브1/8</p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="site/03_jejufolk/index.html"></a>
+							</figure></li>
+							<li><figure class="snip_typ1">
+								<img src="img/sec3/wimg/wimg_4.jpg" alt="" />
+								<figcaption>
+									<h3>JOBIS 영업관리</h3>
+									<p>2017 모바일<br/>완성도 : 100%</p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="#" class="showMask"></a><!-- 레이어팝업 -->
+							</figure></li>
+							<li><figure class="snip_typ1">
+								<img src="img/sec3/wimg/wimg_5.jpg" alt="" />
+								<figcaption>
+									<h3>이메일</h3>
+									<p>2017 HTML4<br/>완성도 : 100%</p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="site/05_email/index.html"></a>
+							</figure></li>
+							<li><figure class="snip_typ1">
+								<img src="img/sec3/wimg/wimg_6.jpg" alt="" />
+								<figcaption>
+									<h3>Gempop_CMA<br/>(SNS)</h3>
+									<p>2017 모바일<br/>완성도 : 100%</p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="site/06_Gempop_CMA/receivemesdel.html"></a>
+							</figure></li>
+							<li><figure class="snip_typ1">
+								<img src="img/sec3/wimg/wimg_7.jpg" alt="" />
+								<figcaption>
+									<h3>이메일<br/>(구매발주서)</h3>
+									<p>2017 HTML4<br/>완성도 : 100%</p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="site/07_email2/index.html"></a>
+							</figure></li>
+							<li><figure class="snip_typ1">
+								<img src="img/sec3/wimg/wimg_8.jpg" alt="" />
+								<figcaption>
+									<h3>OEP_일정등록</h3>
+									<p>2017 반응형<br/>완성도 : 50%</p></p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="site/08_OEP/schedule_month.html"></a>
+							</figure></li>
+						</ul>						
+					</div><!-- //lst_works_wrap -->
+				</div><!-- //sec3 -->
+
+
+
+				<div id="sec4" class="sec4">
+					<h2 class="title">DESIGN</h2>
+					<div class="lst_design_wrap">
+						<ul class="lst_design">
+							<li><figure class="snip_typ2">
+								<img src="img/sec4/dimg/img_1.jpg" alt="" />
+								<figcaption>
+									<h3>Logo</h3>
+									<p>Category : Brand design</p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="d01.html"></a>
+							</figure></li>
+							<li><figure class="snip_typ2">
+								<img src="img/sec4/dimg/img_2.jpg" alt="" />
+								<figcaption>
+									<h3>EARTH(얼쑤)</h3>
+									<p>Category : Editorial design</p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="d02.html"></a>
+							</figure></li>
+							<li><figure class="snip_typ2">
+								<img src="img/sec4/dimg/img_3.jpg" alt="" />
+								<figcaption>
+									<h3>ACONRN TOP</h3>
+									<p>Category : Product &middot; Character design</p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="d03.html"></a>
+							</figure></li>
+							<li><figure class="snip_typ2">
+								<img src="img/sec4/dimg/img_4.jpg" alt="" />
+								<figcaption>
+									<h3>"쿵"</h3>
+									<p>Category : Poster design</p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="d04.html"></a>
+							</figure></li>
+							<li><figure class="snip_typ2">
+								<img src="img/sec4/dimg/img_5.jpg" alt="" />
+								<figcaption>
+									<h3>Korea folk pictogram</h3>
+									<p>Category : pictogram</p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="d05.html"></a>
+							</figure></li>
+							<li><figure class="snip_typ2">
+								<img src="img/sec4/dimg/img_6.jpg" alt="" />
+								<figcaption>
+									<h3>Loveky diary</h3>
+									<p>Category : Editorial design</p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="d06.html"></a>
+							</figure></li>
+							<li><figure class="snip_typ2">
+								<img src="img/sec4/dimg/img_7.jpg" alt="" />
+								<figcaption>
+									<h3>How's she?</h3>
+									<p>Category : Poster design</p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="d07.html"></a>
+							</figure></li>
+							<li><figure class="snip_typ2">
+								<img src="img/sec4/dimg/img_8.jpg" alt="" />
+								<figcaption>
+									<h3>대졸메이커</h3>
+									<p>Category : Graphic design</p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="d08.html"></a>
+							</figure></li>
+							<li><figure class="snip_typ2">
+								<img src="img/sec4/dimg/img_9.jpg" alt="" />
+								<figcaption>
+									<h3>GODDSS</h3>
+									<p>Category : Character design</p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="d09.html"></a>
+							</figure></li>
+							<li><figure class="snip_typ2">
+								<img src="img/sec4/dimg/img_10.jpg" alt="" />
+								<figcaption>
+									<h3>Illustration calendar</h3>
+									<p>Category : Editorial design</p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="d10.html"></a>
+							</figure></li>
+							<li><figure class="snip_typ2">
+								<img src="img/sec4/dimg/img_11.jpg" alt="" />
+								<figcaption>
+									<h3>London Map</h3>
+									<p>Category : Editorial design</p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="d11.html"></a>
+							</figure></li>
+							<li><figure class="snip_typ2">
+								<img src="img/sec4/dimg/img_12.jpg" alt="" />
+								<figcaption>
+									<h3>카페베네</h3>
+									<p>Category : Poster design</p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="d12.html"></a>
+							</figure></li>
+							<li><figure class="snip_typ2">
+								<img src="img/sec4/dimg/img_13.jpg" alt="" />
+								<figcaption>
+									<h3>USB design</h3>
+									<p>Category : Product &middot; Character design</p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="d13.html"></a>
+							</figure></li>
+							<li><figure class="snip_typ2">
+								<img src="img/sec4/dimg/img_14.jpg" alt="" />
+								<figcaption>
+									<h3>Make-up</h3>
+									<p>Category : drowing</p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="d14.html"></a>
+							</figure></li>
+							<li><figure class="snip_typ2">
+								<img src="img/sec4/dimg/img_15.jpg" alt="" />
+								<figcaption>
+									<h3>Pin-up girl calendar</h3>
+									<p>Category : Editorial design</p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="d15.html"></a>
+							</figure></li>
+							<li><figure class="snip_typ2">
+								<img src="img/sec4/dimg/img_16.jpg" alt="" />
+								<figcaption>
+									<h3>Dokdo infographic</h3>
+									<p>Category : Editorial design</p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="d16.html"></a>
+							</figure></li>
+							<li><figure class="snip_typ2">
+								<img src="img/sec4/dimg/img_17.jpg" alt="" />
+								<figcaption>
+									<h3>Market O magazine</h3>
+									<p>Category : Editorial design</p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="d17.html"></a>
+							</figure></li>
+							<li><figure class="snip_typ2">
+								<img src="img/sec4/dimg/img_18.jpg" alt="" />
+								<figcaption>
+									<h3>ACTSENS</h3>
+									<p>Category : Brand design</p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="d18.html"></a>
+							</figure></li>							
+							<li><figure class="snip_typ2">
+								<img src="img/sec4/dimg/img_19.jpg" alt="" />
+								<figcaption>
+									<h3>Tartine et chocolat leaflet</h3>
+									<p>Category : Editorial design</p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="d19.html"></a>
+							</figure></li>
+							<li><figure class="snip_typ2">
+								<img src="img/sec4/dimg/img_20.jpg" alt="" />
+								<figcaption>
+									<h3>BigHead</h3>
+									<p>Category : Character design</p><i class="icon_arrow"></i>
+								</figcaption>
+								<a href="d20.html"></a>
+							</figure></li>
+						</ul>		
+					</div><!-- //lst_design_wrap -->
+				</div><!-- //sec4 -->
+
+				
+				
+				<div id="sec5" class="sec5">
+					<h2 class="title">CONTACT</h2>
+					<h3 class="title_sub">Thank you for visiting my website</h3>
+					<div class="contact_wrap">
+						<div class="sec5_left">
+							<span class="img_me"></span>
+						</div><div class="sec5_right">
+							<span class="txt_contact">프론트앤드 및 퍼블리셔로서<br/>더 큰 성장을 하고 싶습니다.<br/>아직 부족한 점이 많지만<br/>스스로 공부하고<br/>배우려는 의지와 자세는 자신 있습니다.<br/>좋은 인연을 기다리겠습니다!<br/><br/><span class="callnum_wrap"><a href="tel:010-7737-1041" class="callnum">+82-10-7737-1041<span class="callnum_txt">Give me a call</span></a></span></span>
+						</div>
+					</div><!-- //contact_wrap -->
+				</div><!-- //sec5 -->
+
+
+			</div><!-- //content -->
+
+			<div class="mask"></div><!-- 레이어팝업 뒷배경 -->
+			<div class="window win_w4"><!-- 레이어팝업_JOBIS 영업관리 w4 -->
+				<p class="layerpop_top"><span class="layerpop_tit">JOBIS 모바일 영업관리 (약 40페이지)</span><input type="button" href="#" class="btn_layerpop_close"/></p>
+				<div class="layerpop_con">
+					<img src="img/layerpop/jobis_m.png"  alt="" class="img_mobile"/>
+					<img src="img/layerpop/jobis_m (1).jpg"  alt="" class="img_mobile"/>
+					<img src="img/layerpop/jobis_m (2).jpg"  alt="" class="img_mobile"/>
+					<img src="img/layerpop/jobis_m (3).jpg"  alt="" class="img_mobile"/>
+					<img src="img/layerpop/jobis_m (4).jpg"  alt="" class="img_mobile"/>
+					<img src="img/layerpop/jobis_m (5).jpg"  alt="" class="img_mobile"/>
+					<img src="img/layerpop/jobis_m (6).jpg"  alt="" class="img_mobile"/>
+					<img src="img/layerpop/jobis_m (7).jpg"  alt="" class="img_mobile"/>
+					<img src="img/layerpop/jobis_m (8).jpg"  alt="" class="img_mobile"/>
+					<img src="img/layerpop/jobis_m (9).jpg"  alt="" class="img_mobile"/>
+					<img src="img/layerpop/jobis_m (10).jpg"  alt="" class="img_mobile"/>
+					<img src="img/layerpop/jobis_m (11).jpg"  alt="" class="img_mobile"/>
+					<img src="img/layerpop/jobis_m (12).jpg"  alt="" class="img_mobile"/>
+					<img src="img/layerpop/jobis_m (13).jpg"  alt="" class="img_mobile"/>
+					<img src="img/layerpop/jobis_m (14).jpg"  alt="" class="img_mobile"/>
+				</div><!-- //layerpop_con -->
+			</div><!-- //window-->
+
+		</div><!-- //wrap -->
+	</body>
+</html>

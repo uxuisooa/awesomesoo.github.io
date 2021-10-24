@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <title>Document</title>
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+$(function(){
+	 var hovv1 = $('.lst > li > a');
+	 var covv1 = $('.txt');
+//
+//		hovv1.hover(function(){
+//		  covv1.slideDown();
+//		},function(){
+//			covv1.slideUp();		
+//		});
+
+
+//		hovv1.hover(function(){
+//		  covv1.animate({
+//			  top:100
+//			},1000);
+//		},function(){
+//			covv1.animate({
+//			  top:0
+//			},1000);		
+//		});
+
+
+	$(function(){
+		$('.lst > li').mouseover(function(){
+			$(this).find('.cover').stop().animate({top:-200,opaticy:0.9},800);
+		});
+		$('.lst > li').mouseout(function(){
+			$(this).find('.cover').stop().animate({top:180,opaticy:0.9},800);
+		});
+	});
+
+
+
+});
+//]]>
+</script>
+<style type="text/css">
+<!--
+.lst{}
+.lst > li{display:inline-block; position:relative; width: 200px; height: 200px; border:1px solid red; overflow:hidden; background-color:green;}
+.lst > li > a{display:inline-block; position:relative; width:200px; height:200px; }
+.txt{display:inline-block; position:absolute; top:100%; left:0; width: 200px; height: 200px; background-color:rgba(0,0,0,0.2);}
+//-->
+</style>
+ </head>
+ <body>
+  <ul class="lst">
+	<li><a href="#" class="cover"><span class="txt">안녕하세요</span><span class="red"></span></a></li>
+	<li><a href="#" class="cover"><span class="txt">안녕하세요</span><span class="red"></span></a></li>
+	<li><a href="#" class="cover"><span class="txt">안녕하세요</span><span class="red"></span></a></li>
+  </ul>
+ </body>
+</html>

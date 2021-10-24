@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+
+
+
+#footer{background-color:#555555; height:140px; color:#fff;}
+.fwrap{width:1100px; margin:0 auto; padding-top:30px;}
+.fwrap .list_policy{padding-bottom:18px;}
+.fwrap .list_policy li{float:left;
+									padding-right:15px;
+									}
+.fwrap .list_policy li a{color:#fff;}
+.address{width:800px; float:left;}
+.list_tel{float:left;}
+.list_tel li{float:left; padding-right:15px;}
+
+.copy{width:100%;float:left;}
+
+.address,.list_tel,.copy{padding:3px 0;}
+
+
+
+select{width:245px; height:25px;}
+button{width:50px; height:25px;}
+
+
+
+
+
+
+

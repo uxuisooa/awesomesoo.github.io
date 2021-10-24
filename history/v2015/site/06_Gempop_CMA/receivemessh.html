@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+ <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+  <title>GEMPOP</title>
+   <script language="javascript" type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+   <script src="http://code.jquery.com/jquery-latest.js"></script>
+   <script language="javascript" type="text/javascript" src="js/search.js"></script>
+<link rel="stylesheet"  type="text/css"  href="css/common.css"/>
+<link rel="stylesheet"  type="text/css"  href="css/style.css"/>
+ </head>
+
+ <body>
+<div id="all_wrap">
+
+	<div id="header">
+		<div id="u_gnb">
+			<button class="bt_search"></button>				 
+			<h2>받은메시지</h2><em class="nord">4</em>
+			<button class="bt_deleteO"  onclick="location.href='receivemesdel.html' "></button>		
+		</div><!-- //u_gnb -->
+		<div id="ms_folder">
+			<ul class="ms_folderTitle_tab">
+				<li><button class="tab_1 on" onclick="location.href='receivemes.html' ">받은메시지</button></li>
+				<li><button class="tab_2" onclick="location.href='sendmes.html' ">보낸메시지</button></li>
+			</ul><!-- //ms_folderTitle -->
+		</div><!-- //ms_folder -->
+	</div><!-- //header -->
+
+	<div id="bg_search_typ1">
+		<div id="search">
+			<ul class="search_info">
+				<li>
+					<span class="search_tit">통합검색</span>
+						<div class="sh_box">
+							<input type="search" value="" title="검색어 입력" placeholder="검색어 입력" class="shTxt">
+						</div><!-- //sh_box -->				
+				</li>
+				<li>
+					<span class="search_tit">기간</span>
+						<div class="sh_box">
+							<span class="shDate1"><input type="date" class="shDate_inpt"/></span>
+							<span class="wave">~</span>
+							<span class="shDate2"><input type="date" class="shDate_inpt"/></span>
+						</div><!-- //sh_box -->
+				</li>
+				<li>
+					<span class="search_tit">서비스</span>
+						<div class="sh_box">
+							<ul class="shSrv">
+								<li><input type="checkbox" name="message" class="sh_chk checked_sh"/><span>CEP</span></li>
+								<li><input type="checkbox" name="message" class="sh_chk checked_sh"/><span>MEP</span></li>
+								<li><input type="checkbox" name="message" class="sh_chk"/><span>OMS</span></li>
+								<li><input type="checkbox" name="message" class="sh_chk"/><span>JOBIS</span></li>
+							</ul>
+						</div><!-- //sh_box -->
+				</li>				
+			</ul>
+			<div class="search_bt">
+				<button class="sh_bt">검색조건 조회</button>		
+			</div>
+		</div><!-- //search -->
+	</div><!-- //bg_search -->
+
+	<div id="content">
+
+		<ul class="ms_list"><!-- S 받은메시지----------------------------------------------->
+
+			<li><a href="dview.html"><div class="list_wrap">			
+				<div class="m_link">			
+					<p class="m_title">
+						<em class="sev_img mep"></em>
+						<strong class="user">MEP</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">수주서 저장 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link -->
+				<span class="date">오늘 17:26</span>
+				<span class="ic"></span>
+				<em class="ic_file"></em>
+			</div><!-- //list_wrap --></a></li>
+
+			<li><a href="dview.html"><div class="list_wrap">	
+				<div class="m_link">			
+					<p class="m_title">
+						<em class="sev_img jobis"></em>
+						<strong class="user">JOBIS</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">수주서 저장 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic"></span>
+				<em class="ic_file"></em>
+			</div><!-- //list_wrap --></a></li>
+
+			<li><a href="dview.html"><div class="list_wrap">	
+				<div class="m_link">			
+					<p class="m_title">
+						<em class="sev_img cep"></em>
+						<strong class="user">CEP</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">수주서 저장 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic"></span>
+				<em class="ic_file_off"></em>
+			</div><!-- //list_wrap --></a></li>
+
+			<li><a href="dview.html"><div class="list_wrap">	
+				<div class="m_link">			
+					<p class="m_title">
+						<em class="sev_img oms"></em>
+						<strong class="user">OMS</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">수주서 저장 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic "></span>
+				<em class="ic_file_off"></em>
+			</div><!-- //list_wrap --></a></li>
+
+			<li><a href="dview.html"><div class="list_wrap">	
+				<div class="m_link">			
+					<p class="m_title">
+						<em class="sev_img_off mep_off"></em>
+						<strong class="user">MEP</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">수주서 저장 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic_off"></span>
+				<em class="ic_file_off"></em>
+			</div><!-- //list_wrap --></a></li>
+
+			<li><a href="dview.html"><div class="list_wrap">	
+				<div class="m_link">			
+					<p class="m_title">
+						<em class="sev_img_off jobis_off"></em>
+						<strong class="user">JOBIS</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">수주서 저장 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic_off"></span>
+				<em class="ic_file_off"></em>
+			</div><!-- //list_wrap --></a></li>
+
+			<li><a href="dview.html"><div class="list_wrap">	
+				<div class="m_link">			
+					<p class="m_title">
+						<em class="sev_img_off cep_off"></em>
+						<strong class="user">CEP</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">수주서 저장 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic_off"></span>
+				<em class="ic_file_off"></em>
+			</div><!-- //list_wrap --></a></li>
+
+			<li><a href="dview.html"><div class="list_wrap">	
+				<div class="m_link">			
+					<p class="m_title">
+						<em class="sev_img_off oms_off"></em>
+						<strong class="user">OMS</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">수주서 저장 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic_off "></span>
+				<em class="ic_file_off"></em>
+			</div><!-- //list_wrap --></a></li>
+
+			<li><a href="dview.html"><div class="list_wrap"><!--  ==============  읽은 목록 -->
+				<div class="m_link">			
+					<p class="m_title">
+						<em class="sev_img_off oms_off"></em>
+						<strong class="user">OMS</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">수주서 저장 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic_off "></span>
+				<em class="ic_file_off"></em>
+			</div><!-- //list_wrap --></a></li>
+			
+			<li><a href="dview.html"><div class="list_wrap">	
+				<div class="m_link">			
+					<p class="m_title">
+						<em class="sev_img_off oms_off"></em>
+						<strong class="user">OMS</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">수주서 저장 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic_off "></span>
+				<em class="ic_file_off"></em>
+			</div><!-- //list_wrap --></a></li>
+			<li><a href="dview.html"><div class="list_wrap">	
+				<div class="m_link">			
+					<p class="m_title">
+						<em class="sev_img_off oms_off"></em>
+						<strong class="user">OMS</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">수주서 저장 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic_off "></span>
+				<em class="ic_file_off"></em>
+			</div><!-- //list_wrap --></a></li>
+			<li><a href="dview.html"><div class="list_wrap">	
+				<div class="m_link">			
+					<p class="m_title">
+						<em class="sev_img_off oms_off"></em>
+						<strong class="user">OMS</strong>	
+					</p><!-- //m_title -->
+					<p class="sub">
+						<em class="f_name">수주서 저장 안내의 건</em>
+					</p><!-- //sub -->
+				</div><!-- //m_link -->
+
+				<span class="date">오늘 17:26</span>
+				<span class="ic_off"></span>
+				<em class="ic_file_off"></em>
+			</div><!-- //list_wrap --></a></li>
+		</ul><!-- //ms_list --><!-- //받은메시지-->		
+
+	</div><!-- //content -->
+
+</div><!-- //all_wrap -->
+ </body>
+</html>

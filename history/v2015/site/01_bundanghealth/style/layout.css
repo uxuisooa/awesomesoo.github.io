@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+#sub01{
+	width:100%;
+	position:relative;	}
+
+#top{
+    background-position:right top;
+	width:100%;
+	border-bottom:2px solid #d2e4ee;
+	height: 129px;
+    position:relative;
+    z-index: 100;}
+
+#container{
+	width:1120px;
+	position:relative;
+	margin:0 auto 0 auto;}
+
+#footer{
+	margin:auto;
+	position:relative;}
+
+.wrap{
+    margin:0 auto;
+    position:relative;
+    width: 1120px;}

@@ -1,0 +1,396 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ko" xml:lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
+	<meta name="robots" content="all" />
+	<meta name="keywords" content="" />
+	<meta name="description" content=""/>
+	<meta name="author" content=""/>
+	<title>Document</title>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+<script type="text/javascript" src="js/mains.js"></script>
+<script type="text/javascript" src="js/main_rolling.js"></script>
+<script type="text/javascript" src="js/main_util.js"></script>
+<script  type="text/javascript" src="js/template_on.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="style/sub.css"/>
+
+
+</head>
+<body>
+<div class="sub02">
+
+<div id="top">
+
+	<div class="wrap">
+
+		<div id="skipnav">
+			<a href="#">주메뉴 바로가기</a>
+			<a href="#">본문 바로가기</a>
+		</div><!--//skipnav-->
+
+		<h1><a href="index.html"><img src="images/logo.jpg" alt="분당구보건소" /></a></h1>
+
+		<div id="gnb">
+			<ul>
+				<li><a href="login.html">로그인</a></li>
+				<li><a href="join.html">회원가입</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">분당구청</a></li>
+			</ul>
+		</div><!--//gnb-->
+
+		<div id="search">
+			<h2 class="dp_mb"><a href="#" class="ir s_toggle">검색</a></h2>
+			<div>
+				<form id="searchForm" action="#" target="_blank">
+					<fieldset>
+						<legend class="dipy_n">통합검색</legend>
+							<p class="search_txt"><input type="text" name="kwd" id="kwd" value="" class="txt" title="검색어 입력"/> </p>
+							<input type="image" src="images/search_submit.gif" class="submit" alt="검색" title="새창검색"/>
+					</fieldset>
+				</form>
+			</div>
+		</div><!--//search-->
+
+		<div id="nav">
+
+				<h2 class="dp_mb">주메뉴</h2>
+
+				<ul class="over" class="open">
+					<li>
+						<a href="sub01.html">
+						<img src="images_main/nav_1.gif"  alt="보건소안내"/>
+						</a>
+						<ul class="sunmenu">
+							<li><a href="#">인사말</a></li>
+							<li><a href="#">연혁</a></li>
+							<li><a href="#">조직도</a></li>
+							<li><a href="#">보건소위치</a></li>
+							<li><a href="#">보건의료현장</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="sub02.html">
+							<img src="images_main/nav_2.gif"  alt="민원/진료안내"/>
+						</a>
+						<ul class="sunmenu">
+							<li><a href="#">민원서식다운로드</a></li>
+							<li><a href="#">재증명발급안내</a></li>
+							<li><a href="#">임상검사수수료</a></li>
+							<li><a href="#">의약무공지게시판</a></li>
+							<li><a href="#">내과진료</a></li>
+							<li><a href="#">한방진료</a></li>
+							<li><a href="#">물리치료</a></li>
+							<li><a href="#">혈액검사</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="sub03.html" >
+							<img src="images_main/nav_3.gif"  alt="예방접종안내"/>
+						</a>
+						<ul class="sunmenu">
+							<li><a href="#">임시예방접종</a></li>
+							<li><a href="#">영유아예방접종</a></li>
+							<li><a href="#">국가예방접종</a></li>
+							<li><a href="#">취학아동예방접종</a></li>
+							<li><a href="#">B형간염예방접종</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="sub04.html">
+							<img src="images_main/nav_4.gif"  alt="보건서비스"/>
+						</a>
+						<ul class="sunmenu">
+							<li><a href="#">건강증진사업</a></li>
+							<li><a href="#">만성질환관리사업</a></li>
+							<li><a href="#">건강증진센터</a></li>
+							<li><a href="#">결핵관리</a></li>
+							<li><a href="#">구강보건</a></li>
+							<li><a href="#">금연사업</a></li>
+							<li><a href="#">모자보건</a></li>
+							<li><a href="#">방역</a></li>
+							<li><a href="#">성매개감염병예방</a></li>
+							<li><a href="#">건강검진</a></li>
+							<li><a href="#">의료비지원</a></li>
+							<li><a href="#">감염병관리</a></li>
+							<li><a href="#">재보건</a></li>
+							<li><a href="#">방문건강관리</a></li>
+							<li><a href="#">치매관리</a></li>
+							<li><a href="#">장기기증등록</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="sub05.html">
+						<img src="images_main/nav_5.gif"  alt="기관/시설정보"/>
+						</a>
+						<ul class="sunmenu">
+							<li><a href="#">병원</a></li>
+							<li><a href="#">산후조리</a></li>
+							<li><a href="#">안경업소</a></li>
+							<li><a href="#">약국</a></li>
+							<li><a href="#">의료기기</a></li>
+							<li><a href="#">의원</a></li>
+							<li><a href="#">치과기공소</a></li>
+							<li><a href="#">치과의원</a></li>
+							<li><a href="#">한의원</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="sub06.html">
+						<img src="images_main/nav_6.gif"  alt="참여/소식"/>
+						</a>
+						<ul class="sunmenu">
+							<li><a href="#">공지사항</a></li>
+							<li><a href="#">자주묻는질문</a></li>
+							<li><a href="#">건강교육일정</a></li>
+							<li><a href="#">모집공고</a></li>
+							<li><a href="#">민원상담실</a></li>
+							<li><a href="#">건강신문고</a></li>
+							<li><a href="#">사이트맵</a></li>
+						</ul>
+					</li>
+
+				</ul><!-- //over, open -->
+				<div id="menuBg"></div>
+			</div><!-- //nav -->
+
+
+	</div><!--//warp-->
+
+</div><!--//top-->
+
+
+
+
+
+
+
+
+
+<div id="container">
+	<div class="wrap">
+		<div class="lmenu lm02">
+
+			<div class="control">
+				<span>menu control</span>
+				<a href="#"><img src="images/lmenu_open.gif" alt="open"/></a>
+				<a href="#"><img src="images/lmenu_close.gif" alt="close"/></a>
+			</div><!--//control-->
+
+			<h2><span class="dp_pc02">민원/진료안내</span></h2>
+
+			<ul class="leftMenu lfsub02">
+				<li><a href="#">민원서식다운로드</a></li>
+				<li><a href="#">제증명발급안내</a></li>
+				<li><a href="#">임상검사수수료</a></li>
+				<li><a href="#">의약무공지게시판</a></li>
+				<li><a href="#">내과진료</a></li>
+				<li><a href="#">한방진료</a></li>
+				<li><a href="#">물리진료</a></li>
+				<li><a href="#">혈액진료</a></li>
+			</ul><!--//leftMenu lfsub02-->
+
+			<div class="time">
+				<img src="images/side_time.jpg" alt="근무시간안내 토·일요일과 공휴일은 휴무입니. 평일 진료시간 오전9시부터 오후6시입니다. (점심시간은 오후 12시부터 1시까지 입니다.)"/>
+			</div><!--//time-->
+		</div><!--//lmenu lm02-->
+
+			<div class="contents con02">
+				<div class="lnb">
+					<h3 id="con_title">민원서식다운로드</h3>
+
+					<div class="title">
+						<p class="location">
+							<a href="#">Home</a>&gt;
+							<a href="#">보건소안내</a>&gt;
+							<span><strong>인사말</strong></span>
+						</p><!-- //location -->
+
+						<ul class="sns">
+							<li><a href="#"><img src="images/print.gif" alt="프린트"/></a></li>
+							<li><a href="#"><img src="images/twitter.gif" alt="트위터"/></a></li>
+							<li><a href="#"><img src="images/facebook.gif" alt="페이스북"/></a></li>
+						</ul><!-- //sns -->
+					</div><!-- //title -->
+
+				</div><!-- //lnb -->
+
+		<table summary="번호,제목,작성자,첨부파일,작성일,조회수를 확인할 수 있는 게시판" class="tb02">
+			<caption>민원서식다운로드</caption>
+			<colgroup>
+				<col width="6%"/>
+				<col width="10%"/>
+				<col width="*"/>
+				<col width="10%"/>
+				<col width="10%"/>
+				<col width="10%"/>
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">선택</th>
+					<th scope="col">번호</th>
+					<th scope="col">제목</th>
+					<th scope="col">파일</th>
+					<th scope="col">등록일</th>
+					<th scope="col">등록자</th>
+					<th scope="col">조회수</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input type="checkbox" title="선택"/></td>
+					<td>126</td>
+					<td><a href="#">의료 kwanggo 심의기준</a></td>
+					<td><a href="#"><img src="images/icon_file.gif" alt="채용공고 다운로드(한글문서)"/></a></td>
+					<td>2015-07-06</td>
+					<td>의약무관리팀</td>
+					<td>40</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" title="선택"/></td>
+					<td>125</td>
+					<td><a href="#">제목(긴급)선별진료소 운영기관 설치...</a></td>
+					<td><a href="#"><img src="images/icon_file.gif" alt="채용공고 다운로드(한글문서)"/></a></td>
+					<td>2015-06-26</td>
+					<td>의약무관리팀</td>
+					<td>63</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" title="선택"/></td>
+					<td>124</td>
+					<td><a href="#">부속의료기관 신고/변경신고(허가) 신...</a></td>
+					<td><a href="#"><img src="images/icon_file.gif" alt="채용공고 다운로드(한글문서)"/></a></td>
+					<td>2015-06-23</td>
+					<td>의약무관리팀</td>
+					<td>56</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" title="선택"/></td>
+					<td>123</td>
+					<td><a href="#">마약류취급자 지정/허가신청서</a></td>
+					<td><a href="#"><img src="images/icon_file.gif" alt="채용공고 다운로드(한글문서)"/></a></td>
+					<td>2015-05-19</td>
+					<td>의약무관리팀</td>
+					<td>58</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" title="선택"/></td>
+					<td>122</td>
+					<td><a href="#">구급차등 운용 변경 통보(신고)서</a></td>
+					<td><a href="#"><img src="images/icon_file.gif" alt="채용공고 다운로드(한글문서)"/></a></td>
+					<td>2015-04-10</td>
+					<td>의약무관리팀</td>
+					<td>69</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" title="선택"/></td>
+					<td>121</td>
+					<td><a href="#">구급차등 운용 통보(신고)서</a></td>
+					<td><a href="#"><img src="images/icon_file.gif" alt="채용공고 다운로드(한글문서)"/></a></td>
+					<td>2015-04-10</td>
+					<td>의약무관리팀</td>
+					<td>54</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" title="선택"/></td>
+					<td>120</td>
+					<td><a href="#">(신청서)심폐소생술 교육 신청</a></td>
+					<td><a href="#"><img src="images/icon_file.gif" alt="채용공고 다운로드(한글문서)"/></a></td>
+					<td>2015-03-02</td>
+					<td>의약무관리팀</td>
+					<td>94</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" title="선택"/></td>
+					<td>119</td>
+					<td><a href="#">의료기기 유통품질 관리기준 해설서</a></td>
+					<td><a href="#"><img src="images/icon_file.gif" alt="채용공고 다운로드(한글문서)"/></a></td>
+					<td>2015-02-02</td>
+					<td>의약무관리팀</td>
+					<td>73</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" title="선택"/></td>
+					<td>118</td>
+					<td><a href="#">감염발생신고서</a></td>
+					<td><a href="#"><img src="images/icon_file.gif" alt="채용공고 다운로드(한글문서)"/></a></td>
+					<td>2015-01-23</td>
+					<td>의약무관리팀</td>
+					<td>120</td>
+				</tr>
+				<tr class="end01">
+					<td><input type="checkbox" title="선택"/></td>
+					<td>117</td>
+					<td><a href="#">(서식) 결창서 성범죄 경력 및 아동학...</a></td>
+					<td><a href="#"><img src="images/icon_file.gif" alt="채용공고 다운로드(한글문서)"/></a></td>
+					<td>2015-01-14</td>
+					<td>의약무관리팀</td>
+					<td>545</td>
+				</tr>
+			</tbody>
+			</table><!-- //tb02 -->
+
+			<form  method="post" action="#" name="boardfrm" class="down">
+				<fieldset>
+					<legend>선택 다운로드</legend>
+					<label for="search" class="hide">선택 다운로드</label>
+					<input type="image" src="images/bt_down.gif" alt="선택 다운로드" title="선택 다운로드"/>
+				</fieldset>
+			</form>
+
+			<ul class="paging pg02">
+				<li><a href="#"><img src="images/page_first.gif" alt="처음페이지로 이동"/></a></li>
+				<li><a href="#"><img src="images/page_pre.gif" alt="이전페이지로 이동"/></a></li>
+				<li class="page_on"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">6</a></li>
+				<li><a href="#">7</a></li>
+				<li><a href="#">8</a></li>
+				<li><a href="#">9</a></li>
+				<li><a href="#">10</a></li>
+				<li><a href="#"><img src="images/page_next.gif" alt="다음페이지로 이동"/></a></li>
+				<li><a href="#"><img src="images/page_end.gif" alt="마지막페이지로 이동"/></a></li>
+			</ul>
+
+		</div><!-- //contents -->
+
+	</div><!-- //wrap -->
+</div><!-- //container -->
+
+
+
+
+
+
+
+<div id="footer">
+
+	<div class="wrap">
+
+			<p class="footerlogo"><img src="images/logo_footer.jpg" alt="분당구보건소"/></p>
+
+			<ul>
+				<li>개인정보처리방침</li>
+				<li>이메일무단수집거부</li>
+				<li>홈페이지의견</li>
+				<li>오시는길</li>
+			</ul>
+
+			<address>우편번호 : 13496 경기도 성남시 분당구 양현로 306(야탑동)           대표전화 : 729-3990</address>
+
+			<p class="copy">Copyright&copy;2007 Bundang-Gu Health Center. All right Resered. </p>
+
+	</div><!-- //wrap -->
+</div><!-- //footer -->
+
+</div><!--//sub02-->
+</body>
+</html>

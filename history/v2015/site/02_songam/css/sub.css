@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+
+
+
+
+#container_sub{width:1100px;}
+.wrap{}
+#contents{
+	position:absolute; 
+	width:100%; 
+	top:0;
+	right:0;
+	}
+#contents .lnb{
+	top:0; 
+	right:0;
+	}
+#contents .title{}
+#contents .title .location{position:absolute; 
+											float:left; 
+											padding-top:60px; 
+											width:100%; 
+											text-align:center;
+											}
+#contents .title .location a,#contents .title .location span{padding-right:10px; font-size:15px;}
+#contents .title .location a:hover{color:#f26c4f;}
+#contents .sns{
+	position:absolute; 
+	height:40px; 
+	margin-top:45px;
+	right:65px;
+	}
+	
+#contents .sns li{
+	float:left; 
+	margin-left:10px;
+	}
+#contents .sns li a{}
+#contents .sns li a img{}
+
+#detail_con{
+	position:relative;
+	top:100px;
+	background:url(../images/sub_img/sub1_1.jpg) no-repeat center top;
+	width:100%;
+	padding-top:500px; 
+	}
+#detail_con #detail_text,.sub1hope,.sign{
+	line-height:1.8;
+	font-size:14px;
+	text-align:center;
+	}
+#detail_text .sub1txt{}
+#detail_text .sub1txt li{margin-bottom:30px;
+										width:100%;
+										text-align:center;
+										}
+#detail_text li span{
+	font-weight:bold;
+	color:#00a99d;
+	font-size:16px;
+	}
+#detail_con .sub1hope{
+	font-weight:bold;
+	font-size:16px;
+	color:#448ccb;
+	text-align:center;
+	width:100%;
+	}
+#detail_con #sign{
+	position:absolute;	
+	font-size:15px;
+	height:50px;
+	width:200px;
+	right:0;
+
+	}
+#sign{padding-top:20px;}
+#detail_con #sign .founder{padding:10px; height:31px; float:left;}
+#detail_con #sign .EomChunbo img{}
+
+
+.time{display:none;}
+.time img{width:33%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

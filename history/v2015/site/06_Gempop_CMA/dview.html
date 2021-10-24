@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+ <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+  <title>GEMPOP</title>
+   <script language="javascript" type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+   <script src="http://code.jquery.com/jquery-latest.js"></script>
+   <script language="javascript" type="text/javascript" src="js/search.js"></script>
+<link rel="stylesheet"  type="text/css"  href="css/common.css"/>
+<link rel="stylesheet"  type="text/css"  href="css/style.css"/>
+ </head>
+
+ <body>
+<div id="all_wrap">
+
+	<div id="header">
+		<div id="u_gnb">
+			<button class="bt_previous" onclick="location.href='receivemes.html' "></button>				 
+			<h2>상세보기</h2>
+		</div><!-- //u_gnb -->
+
+		
+	</div><!-- //header -->
+
+	<div id="content">
+		<div id="read_wrap">
+			<div id="Infolist_wrap">
+				<p class="title">수주서 저장 안내의 건</p><span class="tit_file"></span>
+				<ul class="Info_list">
+					<li class="list1">
+						<span class="rd_tit">서비스</span><span class="rd_box">JOBIS</span>					
+					</li>
+					<li class="list2">
+						<span class="rd_tit">보낸사람</span><span class="rd_box">홍수아</span><span class="rd_box mailAd">sahong@egemco.com</span>					
+					</li>
+					<li class="list3">
+						<span class="rd_tit">날짜·시간</span><span class="rd_box">2016-04-05 (목) 07:06</span>
+					</li>
+					<li class="list4">
+						<span class="rd_tit">연락처</span><span class="rd_box callNum">010-1234-5678</span>
+					</li>
+					<li class="list5">
+						<span class="rd_tit">알림형태</span>
+							<ul class="rd_box rdNotif">
+								<li>E-mail</li>
+								<li>SMS</li>
+								<li>CMA</li>
+							</ul>
+					</li>
+				</ul><!-- //InfoList -->			
+			</div><!-- //Infolist_wrap -->
+		</div><!-- //read_wrap -->
+
+
+		<div id="readcon_wrap">			
+			<div class="readcon_wrap_bg">			
+				<div class="read_txt">					
+					
+					<p style="text-align:center; font-weight:bold; font-size:1em; padding-top: 15px; margin-bottom:25px;">신규 수주등록건에 대해 알려드립니다.</p>
+					
+					<table cellpadding="0" cellspacing="0" summary="" style="width:100%;">						
+						<colgroup>
+							<col width="50px"/><col width="5px"/><col width="*"/>
+						</colgroup>
+							<tr>
+								<td style="font-size:0.875em;">일자</td>
+								<td style="font-size:0.875em; text-align:center;"> : </td>
+								<td style="font-size:0.875em; padding-left:8px;">#{date}</td>
+							</tr>
+							<tr>
+								<td style="font-size:0.875em;">거래처</td>
+								<td style="font-size:0.875em; text-align:center;"> : </td>
+								<td style="font-size:0.875em; padding-left:8px;">#{ptnr_nm}</td>
+							</tr>
+							<tr>
+								<td style="font-size:0.875em; font-size:0.875em;">품목</td>
+								<td style="font-size:0.875em; text-align:center;"> : </td>
+								<td style="font-size:0.875em; padding-left:8px;">#{pitem_nm}</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<p style="font-size:1em; margin-top:10px;">담당자는 수주내용을 확인하여 생산계획 입력바랍니다.</p>
+
+
+
+
+					<ul style="margin-bottom:10px;">
+						<li style="font-weight:bold; font-size:0.938em; padding-top: 15px; margin-bottom:8px; color:#105a69; ">#{ptnr_nm} 님</li>
+						<li style="font-size:0.875em;">요청하신 발주내역에 대해 알려드립니다.</li>
+					</ul>
+
+					<p style="font-weight:bold; font-size:1em; padding-top: 15px; margin-bottom:8px; ">&lt; 발주내역 &gt;</p>
+					<table cellpadding="0" cellspacing="0" summary="" style="width:100%;">						
+						<colgroup>
+							<col width="65px"/><col width="5px"/><col width="*"/>
+						</colgroup>
+							<tr>
+								<td style="font-size:0.875em;">	발주일자</td>
+								<td style="font-size:0.875em; text-align:center;"> : </td>
+								<td style="font-size:0.875em; padding-left:8px;">#{date}</td>
+							</tr>
+							<tr>
+								<td style="font-size:0.875em;">품목</td>
+								<td style="font-size:0.875em; text-align:center;"> : </td>
+								<td style="font-size:0.875em; padding-left:8px;">#{pitem_nm}</td>
+							</tr>
+						</tbody>
+					</table>
+					<p style="font-size:1em; margin-top:10px;">담당자는 수주내용을 확인하여 생산계획 입력바랍니다.</p>
+
+
+
+
+
+				</div><!-- //read_txt -->
+				<div class="read_img">			
+					<img src="images/eximg.jpg"  alt="첨부이미지"/>
+				</div><!-- //read_img -->
+			</div><!-- //readcon_wrap_bg -->
+		</div><!-- //readcon_wrap -->
+	</div><!-- //content -->
+
+</div><!-- //all_wrap -->
+ </body>
+</html>

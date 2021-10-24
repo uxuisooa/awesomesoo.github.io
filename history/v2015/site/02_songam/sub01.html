@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+
+  <title>송암스페이스센터</title>
+<!-- jquery기본 -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+<!-- nav -->
+<script type="text/javascript" src="js/template.js"></script>
+
+<!-- btn_all_menu -->
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="js/mof.js"></script>
+
+<!-- 메인배너 -->
+<!-- <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script> -->
+<script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var visual=$('#brandVisual > ul > li');
+		var button=$('#buttonList > li');
+		var current=0;
+		
+		button.on({
+			    click:function(){
+					var tg=$(this);
+					var i=tg.index();
+					button.removeClass('on')
+					tg.addClass('on');
+					move(i);
+				}
+		})
+		/*추가*/
+		timer();
+		function timer(){
+			setInterval(function(){
+				var n=current+1;
+				if(n==visual.length){
+					n=0;
+				}
+				button.eq(n).trigger('click');
+			},3000);
+		}
+         /**/
+		function move(i){
+			if(current==i) return;//추가
+			var currentEl=visual.eq(current);
+			var nextEl=visual.eq(i);
+				currentEl.css({left:0}).stop().animate({left:'-100%'});
+				nextEl.css({left:'100%'}).stop().animate({left:0});
+				current=i;
+		}
+	})
+	
+</script>
+
+
+<!--[if IE]><script type="text/javascript" src="js/ie.js"></script><![endif]-->
+
+<link rel="stylesheet" href="css/reset.css">
+
+ </head>
+ <body>
+  
+<div id="all_wrap">
+	<div id="wrap">
+
+
+
+
+
+	<div id="skipnav">
+		<a href="#">주메뉴 바로가기</a>	
+		<a href="index.html">본문 바로가기</a>
+	</div><!--//skipnav-->
+
+
+
+
+<div id="all_menu_wrap">
+	<p><img src="images/main_img/img_all_menu.png"  alt="송암스페이스센터 전체메뉴입니다." width="189" height="87"/></p>
+	<nav>
+		<div id="gnb" class="mt10">
+			<h2 class="hide">주메뉴</h2>
+			<ul>
+				<li>
+					<a href="#" onclick="toggleDepth1MenuGroup('1')">송암별빛</a>
+					<div id="depth2MenuList_1">
+						<ul>
+							<li><a href="sub01.html">설립이념</a></li>
+							<li><a href="#">시설안내</a></li>
+							<li><a href="#">오시는길</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#" onclick="toggleDepth1MenuGroup('2')">별소리모아</a>
+					<div id="depth2MenuList_2">
+						<ul>
+							<li><a href="#">방송보도자료</a></li>
+							<li><a href="#">신문잡지보도</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#" onclick="toggleDepth1MenuGroup('3')">별나래갤러리</a>
+					<div id="depth2MenuList_3">
+						<ul>
+							<li><a href="#">별빛갤러리</a></li>
+							<li><a href="#">포토갤러리</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#" onclick="toggleDepth1MenuGroup('4')">별소담</a>
+					<div id="depth2MenuList_4">
+						<ul>
+							<li><a href="#">별빛뉴스</a></li>
+							<li><a href="#">별빛이야기</a></li>
+							<li><a href="#">별빛 요금안내</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="#" onclick="toggleDepth1MenuGroup('5')">별빛캠프</a>
+					<div id="depth2MenuList_5">
+						<ul>
+							<li><a href="#">일일 천문교실</a></li>
+							<li><a href="#">1박2일 우주 과학캠프</a></li>
+							<li><a href="#">2박3일 우주여행</a></li>
+							<li><a href="#">챌린저러닝센터 실습</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div><!-- //gnb -->
+	</nav>
+
+
+	<p class="ta_c mt20">
+		<a href="#" id="btnAllMenuClose" title="메뉴닫기">
+			<img src="images/main_img/btn_all_close.png"  alt="메뉴닫기" width="85" height="30"/>
+		</a>
+	</p>
+
+</div><!-- //all_menu_wrap -->
+
+
+
+
+
+
+<header id="header">
+
+	<h1><a href="index.html" id="logo"><img src="images/main_img/logo.jpg" alt="송암스페이스센터" width="100" height="100" /></a></h1>
+
+	<p class="btn_all_menu">
+		<a href="#" id="btnAllMenuOpen" title="메뉴열기">
+			<img src="images/main_img/allmenu.png"  alt="메뉴열기"/>
+		</a>
+	</p><!-- //btn_all_menu -->
+
+
+
+
+	<div id="topmenu">
+	<ul>					
+		<li><a href="index.html">HOME</a></li>
+		<li><a href="#">로그인</a></li>
+		<li><a href="#">회원가입</a></li>
+		<li><a href="#">사이트맵</a></li>
+		<li><a href="#">ENGLISH</a></li>
+	</ul>
+</div><!--//topmenu -->
+
+
+<div id="nav">
+
+		<h2 class="hide">주메뉴</h2>
+
+		<ul id="menu">
+			<li>
+				<a href="sub01.html" class="1depth"><img src="images/main_img/nav01.gif"  alt="송암별빛"/></a>
+				<ul class="sunmenu sun01">
+					<li><a href="sub01.html">설립이념</a></li>
+					<li><a href="#">시설안내</a></li>
+					<li><a href="#">오시는길</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#" class="1depth"><img src="images/main_img/nav02.gif"  alt="별소리모아"/></a>
+				<ul class="sunmenu sun02">
+					<li><a href="#">방송보도자료</a></li>
+					<li><a href="#">신문잡지보도</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#" class="1depth"><img src="images/main_img/nav03.gif"  alt="별나래갤러리"/></a>
+				<ul class="sunmenu sun03">
+					<li><a href="#">별빛갤러리</a></li>
+					<li><a href="#">포토갤러리</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#" class="1depth"><img src="images/main_img/nav04.gif"  alt="별소담"/></a>
+				<ul class="sunmenu sun04">
+					<li><a href="#">별빛뉴스</a></li>
+					<li><a href="#">별빛이야기</a></li>
+					<li><a href="#">별빛 요금안내</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#" class="1depth"><img src="images/main_img/nav05.gif"  alt="별빛캠프"/></a>
+				<ul class="sunmenu sun05">
+					<li><a href="#">일일 천문교실</a></li>
+					<li><a href="#">1박2일 우주 과학캠프</a></li>
+					<li><a href="#">2박3일 우주여행</a></li>
+					<li><a href="#">챌린저러닝센터 실습</a></li>
+				</ul>
+			</li>
+			
+		</ul><!-- //menu-->
+
+</div><!-- //nav -->
+
+
+
+
+<script language="javascript" type="text/javascript">
+initNavigation()
+</script>
+
+
+</header><!-- //header -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="container_sub">
+	<div class="wrap">
+		
+		<div id="contents">
+				<div class="lnb">
+					
+					<div class="title">
+						<p class="location">
+							<a href="#">Home</a><span>&gt;</span>
+							<a href="#">송암별빛</a><span>&gt;</span>
+							<span><strong>설립이념</strong></span>
+						</p><!-- /location -->
+					
+						<ul class="sns">			
+							<li><a href="#"><img src="images/sub_img/twitter.jpg" alt="트위터"/></a></li>
+							<li><a href="#"><img src="images/sub_img/facebook.jpg" alt="페이스북"/></a></li>
+							<li><a href="#"><img src="images/sub_img/youtube.jpg" alt="유튜브"/></a></li>
+						</ul><!-- /sns -->							
+					</div><!-- //title -->
+			
+				</div><!-- //lnb -->
+				
+				<div id="detail_con">
+
+					<ul id="detail_text">
+						<li><span>여기 한그루의 소나무가 있습니다.</span>
+							<ul class="sub1txt">
+								<li>
+									묵묵히 한자리에서 거친 비바람과 모진 세월의 풍파에 맞서며 세상을 직시한 
+									소나무에서 우리는 지향해야하는 인간다운 성품과 세상의 지식을 깨우칩니다.
+								</li>
+							</ul>
+						</li>
+						<li><span>여기 한 덩이의 바위가 있습니다.</span>
+							<ul class="sub1txt">
+								<li>
+									오랜세월이 밀어내려 했지만 먼 세상으로 한 발자국도 밀려나지 않고 제자리를
+									지켜낸 바위는 우리에게 자신이 지켜나가야 할 위치를 가르칩니다.<br/>								
+									"우리가 현재 살아가고 있는 곳이 이 우주 속 지구 아니겠습니까. 광활한
+									우주공간 속에서 나라는 존재, <br/>인간으로서의 현주소를 자각하고, 어떻게 살아야
+									하는 지를 깨닫게 하자는 것이지요. <br/>천문관측시설을 만들어 청소년과 어린이들에게
+									과학 지식과 더불어, 우주 속 자신의 위치를 생각하게끔 해주고 싶습니다."
+								</li>
+							</ul>
+						</li>
+						<li><span>송암스페이스센터는 한그루의 소나무와 한 덩이의 바위 같은 천문대입니다.</span>
+							<ul class="sub1txt">
+								<li>
+									항상 푸른 소나무처럼 여러분의 마음속에 푸른꿈을 심어드리겠습니다. 항상 같은
+									위치의 바위처럼 여러분에게 변치 않는 지식의 문을 열드 드리겠습니다. <br/>꿈과 지식의
+									상징이 되는 송암스페이스센터를 기대해주십시요.
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+					<p class="sub1hope">
+							어린이 및 청소년들에게 미래의 꿈과 희망을 키워 앞으로 다가올 우주시대의 개척자로 자라날 수 있도록 기회를 주고,<br/>
+							어른들에게는 아득히 오래 전 고향에서 보던 별에 대한아련한 추억을 되찾을 수 있도록 하는 것이 송암천문대의 설립정신이며,<br/>
+							이를 통하여 보다 많은 사람들이 별과 우주에 관한 이해를 넓히고, 좀 더 친근해질 수 있기를 희망합니다.
+					</p>									
+					
+					<div id="sign">
+						<p class="founder">설립자</p>
+						<p class="EomChunbo"><img src="images/sub_img/name.png"  alt="엄춘보"/></p>					
+					</div><!-- //sign>
+
+					</div><!-- //detail_contxt-->
+
+				</div><!-- //detail_con-->
+
+			</div><!-- //contents -->
+
+			<div class="time">
+				<img src="images/sub_img/time1.jpg" alt="
+				개장시간:매주 월요일 휴무 하절기(4월~12월). 화~금,일,공휴일 11:00~21:00. 토요일11:00~21:30.				
+				"/>
+				<img src="images/sub_img/time2.jpg" alt="
+				티켓매표시간:화~금,일,공휴일 11:00~19:00.토요일11:00~19:30
+				"/>
+				<img src="images/sub_img/time3.jpg" alt="
+				티켓매표시간:화~금,일,공휴일 11:00~19:00.토요일11:00~19:30
+				"/>
+			</div><!--//time-->
+
+
+
+	</div><!-- //wrap -->
+</div><!-- //container_sub -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="footer">	
+	<div class="fwrap">		
+
+			<ul class="list_policy">
+				<li><a href="#">개인정보처리방침</a><span>|</span></li>
+				<li><a href="#">이메일무단수집거부</a><span>|</span></li>
+				<li><a href="#">홈페이지의견</a><span>|</span></li>
+				<li><a href="#">오시는길</a></li>			
+			</ul>
+
+			<p class="address">경기도 양주시 장흥면 권율로 108번길 103(석현리 410) 재단법인 송암스페이스센터</p>
+			<p class="list_tel">
+				TEL 031-894-6004	|	FAX 031-894-6004
+			</p>
+			<p class="copy">COPYRIGHT 2007 SONGAM SPACECENTER ALL RIGHTS RESERVED</p>
+
+	</div><!-- fwrap -->		
+</div><!-- footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div><!-- //wrap -->
+</div><!-- //all_wrap -->
+ </body>
+</html>

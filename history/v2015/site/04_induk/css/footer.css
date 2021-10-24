@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+
+#footer{text-align:center;
+			background:#464646;
+			color:#fff;
+			padding:10px 0;			
+			position:relative;
+			margin-top:10px;
+			}
+.footermenu{}
+.footermenu ul{}
+.footermenu ul li{display:inline-block;
+						background:url(../images/bg_footline.gif) no-repeat left top;
+						padding:0 6px;}
+.footermenu ul li:first-child{background:none;}
+.footermenu ul li a{color:#fff;}
+.footermenu ul li:nth-child(3) a{background:url(../images/bg_twit.png) no-repeat left top/18px;
+											display:inline-block;
+											padding-left:20px;}
+.footermenu ul li:nth-child(4) a{background:url(../images/bg_facebk.png) no-repeat left top/18px;
+											display:inline-block;
+											padding-left:20px;}
+.topbtn{position:absolute;top:10px; right:13px;}
+.copy{margin-top:1%;}

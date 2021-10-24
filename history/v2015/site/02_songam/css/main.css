@@ -1,0 +1,204 @@
+@charset "UTF-8";
+/* header */
+.hide{display:none;}
+
+#logo{}
+
+/* 오른쪽 전체메뉴 */
+#header .btn_all_menu,#all_menu_wrap{
+	display:none;
+	}
+
+/*HOME 로그인 회원가입 사이트맵 ENGLISH */
+#topmenu{
+    position: absolute;
+    right:5px;
+    top: 0;
+	overflow: hidden;
+	}
+#topmenu ul li{
+	float:left;
+	padding:5px 10px;
+	color:#898989;
+	}
+#topmenu ul li a{
+	font-weight:bold;}
+
+
+
+/*주메뉴*/
+/*1depth*/
+#nav{}
+#nav #menu{
+    position:absolute;
+    right: 0;
+    top:65px;
+	}
+#nav #menu  li{
+    float:left;
+    text-align:center;
+	padding-right:80px;	
+    display:block;
+	}
+#nav #menu  li a:hover{
+	text-decoration:none;
+	}
+
+/*2depth*/
+#nav ul  li .sunmenu li a{
+	color:#464646;
+	font-size:15px;	
+	font-weight:bold;
+	}
+#nav ul  li .sunmenu li a:hover{
+	color:#ed1c24;
+	font-size:15px;
+	font-weight:bold;
+	}
+.sunmenu{
+	position:absolute;
+	background-color:rgba(255,255,255,0.5);
+	/*background:url(../images/main_img/bg_menu.gif) repeat-x 0 0;*/
+	display:none;
+	height:50px;
+	top:35px;
+	left:0;
+	}
+.sunmenu li{padding-top:17px;}
+.sun01{left:-1500px; width:4000px; padding-left:1500px;}
+.sun02{left:-1500px; width:4000px; padding-left:1660px;}
+.sun03{left:-1500px; width:4000px; padding-left:1843px;}
+.sun04{left:-1500px; width:4000px; padding-left:1943px;}
+.sun05{left:-1500px; width:4000px; padding-left:1680px;}
+
+
+
+/* 메인배너 */
+	#brandVisual{position:relative; width:100%; height:600px;}
+	#brandVisual ul{position:relative;}
+	#brandVisual ul li{position:absolute;
+					width:100%; height:600px;}
+	#brandVisual ul li a{text-indent:-9999px;
+	                      display:block;}
+	#brandVisual .visual_0{left:0;background:url(../images/main_img/space2.jpg) 50% 0 no-repeat;}
+	#brandVisual .visual_1{left:100%;background:url(../images/main_img/space1.jpg) 50% 0 no-repeat;}
+	#brandVisual .visual_2{left:200%;background:url(../images/main_img/space3.jpg) 50% 0 no-repeat;}
+
+	#buttonList{}
+	#buttonList li{background:url(../images/main_img//btnVisual.png) 0 -16px no-repeat;
+						float:left;
+						width:14px;
+						height:15px;
+						position:relative;
+						left:47.8%;
+						top:-95px;
+						margin:0 5px;}
+	#buttonList li.on{background-position:0 0;}
+	#buttonList li a{display:block;
+					text-indent:-9999px;}
+
+/* box */
+.box{
+	width:1100px; 
+	height:205px;
+	z-index:999;
+	margin:0 auto;
+	display:block;
+	}
+
+.box h3{
+	font-size:20px;
+	margin:25px 0 10px 30px;
+	}
+.box h3 a:hover{
+	text-decoration:none;}
+.box p,.box ul li{
+	font-size:15px;
+	line-height:1.8;
+	margin-left:30px;
+	}
+
+.box01{
+	width:25%; 
+	height:275px; 
+	background-color:rgba(222,24,41,0.9);
+	float:left;
+	z-index:999;
+	position:relative;
+	top:-70px;
+	}
+.box01 h3 a,.box01 ul li a{
+	color:#fff; 
+	}
+.box01 .more{
+	margin:10% 0 0 80%;
+	}
+.box02{
+	width:25%; 
+	height:275px; 
+	background-color:#fff; 
+	color:#656565; 
+	float:left; 
+	z-index:999;
+	position:relative;
+	top:-70px;
+	}
+.box02 .boxline{
+	margin-top:15px;
+	background:url(../images/main_img/boxline.jpg) no-repeat;
+	width:80%;
+	text-align:center;
+	height:1px;}
+.box03{
+	width:25%; 
+	height:275px; 
+	background:url(../images/main_img/box3_restaurant.png) no-repeat rgba(224,224,224,1) right bottom; 
+	color:#656565; 
+	float:left; 
+	z-index:999;
+	position:relative;
+	top:-70px;
+	}
+.box02 h3 a,.box03 h3 a{
+	color:#656565;
+	}
+.box04{
+	width:25%; 
+	height:275px;	
+	background:url(../images/main_img/box4clock.png) no-repeat rgba(58,58,58,0.9) right bottom;
+	color:#fff; 
+	float:left; 
+	z-index:999;
+	position:relative;
+	top:-70px;
+	}
+.box04 h3 a{
+	color:#fff;
+	}
+
+
+
+/* QUICK MENU */
+.quick_menu{
+	clear:both;
+	margin:0 auto;
+	height:200px;
+	width:100%;
+	position:relative;
+	display:block;
+	}
+.quickM{
+	font-size:20px;
+	text-decoration:bold;
+	text-align:center;
+	margin-bottom:20px;
+	}
+.quick_menu ul{
+	margin:0 auto;
+	width:550px;
+	position:relative;
+	}
+.quick_menu ul li{float:left; width:70px; text-align:center; margin:0 20px;}
+.quick_menu ul li a{font-size:14px;}
+.quick_menu ul li a:hover{color:#656565;}
+.quick_menu ul li a img{padding-bottom:10px;}

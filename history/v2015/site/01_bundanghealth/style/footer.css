@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+
+#footer{
+	clear:both;
+	background-color:#ebebeb;
+	height:149px; 
+	}
+
+.footerlogo{		
+	float:left;
+	padding:50px 0;
+	}
+.footerlogo img{
+	}
+#footer ul,address,.copy{
+	float:left;
+	}
+#footer .wrap ul{
+	width:800px;
+	margin:48px  0 0 50px;
+	}
+#footer .wrap ul li{
+	float:left;
+	background:url(../images/footer_bar.gif) no-repeat left 3px;	
+	padding:0px 18px;
+	}
+#footer .wrap ul li:first-child{
+	background:none;
+	padding:0 18px 0 0;
+	}
+
+address{
+	width:800px;
+	margin:7px  0 0 50px;}
+.copy{
+	width:800px;
+	margin:6px  0 0 50px;
+	}

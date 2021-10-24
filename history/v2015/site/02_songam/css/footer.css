@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+
+
+
+#footer{background-color:#ebebeb; height:120px;}
+#footer .fwrap{}
+#footer .fwrap .list_policy{position:relative; width:80%; margin:0 auto; display:block; text-align:center; padding-top:20px; padding-bottom:5px;}
+#footer .fwrap .list_policy li{display:inline-block;}
+#footer .fwrap .list_policy li span{padding:0 8px;}
+#footer .fwrap .list_policy li a{}
+#footer .fwrap .address{clear:both;position:relative; width:80%; text-align:center; padding:0 10% 5px 10%;}
+#footer .fwrap .list_tel{position:relative; width:80%; text-align:center;padding:0 10% 5px 10%; float:left;}
+#footer .fwrap .copy{position:relative; width:80%; text-align:center;padding:0 10% 0 10%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
