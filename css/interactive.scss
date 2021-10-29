@@ -1,11 +1,11 @@
 @charset "UTF-8";
 * {
   box-sizing: border-box;
-  @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
-  font-family: "Noto Sans KR", sans-serif;
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 10px;
 }
-$mobile: "only screen and (max-width: 768px)"; //529
+$mobile: 'only screen and (max-width: 768px)'; //529
 $content-width: 700px;
 
 body {
@@ -151,7 +151,7 @@ section {
           width: 100%;
         }
         &::after {
-          content: "";
+          content: '';
           width: 6rem;
           height: 6rem;
           position: absolute;
@@ -182,7 +182,7 @@ section {
             background-color: #fee9e2;
             box-shadow: 0px 10px 10px rgba(151, 105, 107, 0.4);
             &::after {
-              content: "";
+              content: '';
               width: 6rem;
               height: 6rem;
               position: absolute;
@@ -243,7 +243,7 @@ section {
       background-color: #f39eb2;
       > .contWrap {
         margin: 0 auto;
-        padding: 20px 40px;
+        padding: 20px 40px 40px;
         width: $content-width;
         border-radius: 1.5rem;
         font-size: 1.4rem;
@@ -309,7 +309,7 @@ section {
               color: #384999 !important;
             }
             &::before {
-              content: "";
+              content: '';
               width: 0%;
               height: 100%;
               display: block;
@@ -330,7 +330,7 @@ section {
             }
 
             &::after {
-              content: "";
+              content: '';
               width: 0%;
               height: 100%;
               display: block;
